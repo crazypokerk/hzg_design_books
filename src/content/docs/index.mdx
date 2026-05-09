@@ -1,40 +1,39 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: 移动端最佳实践手册
+description: 面向手机与 PDA 场景的页面目标、信息架构、交互、视觉与性能实践。
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 从目标与场景、信息架构、交互与行为、视觉与感知、性能五个维度构建移动端手册。
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 查看手册总览
+      link: /guides/mobile/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: 查看设计目标
+      link: /guides/design_target/
+      icon: right-arrow
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 章节概览
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="目标与场景" icon="pencil">
+		先定义页面服务的任务目标、使用场景、设备边界和成功标准。
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="信息架构" icon="document">
+		组织首屏重点、页面层级、模块结构与导航路径。
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="交互与行为" icon="add-document">
+		规范按钮、表单、反馈、状态与错误恢复。
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="视觉与感知" icon="setting">
+		通过层级、对比、留白和状态表达提升识别与判断效率。
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="性能" icon="open-book">
+		覆盖加载、响应、弱网、兼容性与稳定性。
 	</Card>
 </CardGrid>
