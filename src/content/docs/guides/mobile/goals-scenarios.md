@@ -48,7 +48,7 @@ sidebar:
 
 ![area_relation](../../../../assets/area_relation.png)
 
-> 测试网站：[viewportsizer](https://viewportsizer.com/)
+> 视口测试网站：[viewportsizer](https://viewportsizer.com/)
 
 📍记住一个关键点：设计布局时优先使用`window.innerWidth/innerHeight`（用户真正看到的区域），而判断设备硬件规格时使用 `screen` 系列 + `dpr`。两者不可混淆，否则容易出现内容被遮挡或留白过多的问题。
 
