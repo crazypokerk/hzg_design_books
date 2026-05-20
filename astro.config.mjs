@@ -10,13 +10,13 @@ export default defineConfig({
 	adapter: netlify(),
 	integrations: [
 		starlight({
-			title: '移动端最佳实践手册',
+			title: '活字格设计手册',
 			customCss: ['./src/styles/starlight-fonts.css'],
 			plugins: [starlightThemeVintagePlugin()],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: '移动端最佳实践手册',
+					label: '移动端最佳实践',
 					items: [
 						{
 							label: '设计思路和方向',
