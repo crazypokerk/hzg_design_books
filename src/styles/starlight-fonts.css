@@ -5,6 +5,9 @@
     sans-serif;
   --sl-font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
+  --docs-sidebar-indent-0: 0.625rem;
+  --docs-sidebar-indent-1: 1.5rem;
+  --docs-sidebar-indent-2: 2.375rem;
 }
 
 code,
@@ -12,4 +15,37 @@ kbd,
 samp,
 pre {
   font-family: var(--sl-font-mono);
+}
+
+.sidebar-pane {
+  scrollbar-gutter: stable;
+}
+
+.sidebar-pane .top-level a,
+.sidebar-pane .top-level a[aria-current='page'],
+.sidebar-pane .top-level a[aria-current='page']:hover,
+.sidebar-pane .top-level a[aria-current='page']:focus {
+  font-weight: 500;
+}
+
+/* Keep manual sidebar groups visually aligned by level.
+   Reset theme/core nested <li> indentation, then control levels through the variables above. */
+.sidebar-pane ul ul li {
+  border-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
+  padding-inline-start: 0 !important;
+}
+
+.sidebar-pane .top-level > li > details > summary {
+  padding-inline-start: var(--docs-sidebar-indent-0) !important;
+}
+
+.sidebar-pane .top-level > li > details > ul > li > details > summary,
+.sidebar-pane .top-level > li > details > ul > li > a {
+  padding-inline-start: var(--docs-sidebar-indent-1) !important;
+}
+
+.sidebar-pane .top-level > li > details > ul > li > details > ul > li > details > summary,
+.sidebar-pane .top-level > li > details > ul > li > details > ul > li > a {
+  padding-inline-start: var(--docs-sidebar-indent-2) !important;
 }
