@@ -30,12 +30,19 @@ export default defineConfig({
 							],
 						},
 						{
-							label: '实战训练和演示',
-							items: [{ label: '总览', slug: 'guides/practice' }],
+							label: '典型场景和功能',
+							items: [
+								{ label: '总览', slug: 'guides/scenarios' },
+								{ label: '安卓容器（PDA）', slug: 'guides/scenarios/hac-android-container-pda' },
+							],
 						},
 						{
-							label: '典型场景和功能',
-							items: [{ label: '总览', slug: 'guides/scenarios' }],
+							label: '实战训练和演示',
+							items: [
+								{ label: '总览', slug: 'guides/practice' },
+								{ label: 'PDA 盘点扫码页设计演示', slug: 'guides/practice/pda-inventory-counting' },
+							],
+							
 						},
 					],
 				},
