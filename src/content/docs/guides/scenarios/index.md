@@ -19,3 +19,4 @@ description: 汇总移动端常见业务场景、功能模式和页面类型。
 - [安卓容器（PDA）](./hac-android-container-pda/)
 - [日志](./log-hac/)
 - [定位](./gps-location-demo/)
+- [离线模式](./offline-model-hac/)
