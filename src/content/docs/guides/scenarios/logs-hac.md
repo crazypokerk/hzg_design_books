@@ -85,7 +85,3 @@ HAC_Log_ERROR_20240112.txt
 - 只在某一台 PDA 上异常：记录设备型号、系统版本、WebView 版本，并收集该设备的 HAC 日志。
 
 如果还需要调试 HAC 中加载的 Web 页面，可以参考[调试](./how-to-debug-hac/)。
-
-## 参考来源
-
-本文内容参考葡萄城开发者社区帖子：[如何查看 HAC 的运行日志？](https://gcdn.grapecity.com.cn/showtopic-201511-1-1.html)
