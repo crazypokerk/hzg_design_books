@@ -1,22 +1,18 @@
 ---
 title: 典型场景和功能
-description: 汇总移动端常见业务场景、功能模式和页面类型。
+description: 汇总 HAC、PDA 设备能力和典型移动端功能资料。
+sidebar:
+  order: 1
 ---
 
-这里用于沉淀移动端页面的典型场景和常见功能模式。
+这里沉淀的是 PDA 和移动端相关的具体能力资料，例如 HAC 容器、扫码广播、定位、离线模式、调试和日志。
 
-后续可以按业务场景组织，例如：
+如果你要先学习 PDA 页面应该怎么设计，请从[移动端最佳实践](../mobile/)开始；如果你已经在做具体能力接入或问题排查，再进入本部分。
 
-- 移动审批
-- 查询与详情
-- 表单录入
-- 图片上传与附件
-- 扫码、盘点、收货、出库
-- 异常上报与处理
+## 已有内容
 
-## 已有场景
-
-- [安卓容器（PDA）](./hac-android-container-pda/)
-- [日志](./log-hac/)
-- [定位](./gps-location-demo/)
-- [离线模式](./offline-model-hac/)
+- [安卓容器（PDA）](./hac-android-container-pda/)：HAC 的安装、配置、扫码广播、设备兼容和常见问题。
+- [调试](./how-to-debug-hac/)：使用 Chrome DevTools 调试 HAC 中的活字格 Web 页面。
+- [日志](./logs-hac/)：查看和收集 HAC 运行日志。
+- [「功能」定位](./gps-location-demo/)：通过 PDA 交互命令插件获取地理位置。
+- [「功能」离线模式](./offline-model-hac/)：通过离线模式和离线存储支持本地暂存。

@@ -19,14 +19,14 @@ export default defineConfig({
 					label: '移动端最佳实践',
 					items: [
 						{
-							label: '设计思路和方向',
+							label: 'PDA 页面设计最佳规范',
 							items: [
 								{ label: '手册总览', slug: 'guides/mobile' },
-								{ label: '1. 目标与场景', slug: 'guides/mobile/goals-scenarios' },
-								{ label: '2. 信息架构', slug: 'guides/mobile/information-architecture' },
-								{ label: '3. 交互与行为', slug: 'guides/mobile/interaction-behavior' },
-								{ label: '4. 视觉与感知', slug: 'guides/mobile/visual-perception' },
-								{ label: '5. 性能', slug: 'guides/mobile/performance' },
+								{ label: '1. 先把页面想清楚', slug: 'guides/mobile/goals-scenarios' },
+								{ label: '2. 页面内容怎么摆', slug: 'guides/mobile/information-architecture' },
+								{ label: '3. 扫码、按钮和表单怎么动', slug: 'guides/mobile/interaction-behavior' },
+								{ label: '4. 小屏上怎么看得清', slug: 'guides/mobile/visual-perception' },
+								{ label: '5. 弱网、旧设备和真机怎么验', slug: 'guides/mobile/performance' },
 							],
 						},
 						{
