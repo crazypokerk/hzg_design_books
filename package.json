@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^7.0.8",
-    "@astrojs/starlight": "^0.39.1",
-    "astro": "^6.2.2",
+    "@astrojs/netlify": "^7.0.11",
+    "@astrojs/starlight": "^0.39.2",
+    "astro": "^6.4.2",
     "netlify-identity-widget": "^2.0.3",
     "sharp": "^0.34.5",
     "starlight-theme-vintage": "^0.1.0"
