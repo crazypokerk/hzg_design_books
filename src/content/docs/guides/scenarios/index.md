@@ -17,3 +17,4 @@ sidebar:
 - [「功能」定位](./gps-location-demo/)：通过 PDA 交互命令插件获取地理位置。
 - [「功能」NFC](./nfc-tag-reading/)：通过支持 NFC 的 Android 设备读取近场标签。
 - [「功能」离线模式](./offline-model-hac/)：通过离线模式和离线存储支持本地暂存。
+- [「功能」拍摄](./camera-capture/)：通过 Android 设备拍摄照片、视频，添加照片水印，录制音频并读取本地文件。
