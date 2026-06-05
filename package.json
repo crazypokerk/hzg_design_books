@@ -12,9 +12,11 @@
   "dependencies": {
     "@astrojs/netlify": "^7.0.11",
     "@astrojs/starlight": "^0.39.2",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@six-tech/starlight-theme-six": "^1.0.16",
     "astro": "^6.4.2",
     "netlify-identity-widget": "^2.0.3",
-    "sharp": "^0.34.5",
-    "starlight-theme-vintage": "^0.1.0"
+    "sharp": "^0.34.5"
   }
 }

@@ -1,8 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightThemeSix from '@six-tech/starlight-theme-six';
 import netlify from '@astrojs/netlify';
-import starlightThemeVintagePlugin from 'starlight-theme-vintage';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +12,7 @@ export default defineConfig({
 		starlight({
 			title: '活字格设计手册',
 			customCss: ['./src/styles/starlight-fonts.css'],
-			plugins: [starlightThemeVintagePlugin()],
+			plugins: [starlightThemeSix({})],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
