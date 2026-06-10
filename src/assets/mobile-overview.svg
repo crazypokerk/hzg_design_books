@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">PDA 页面设计总览</title>
+  <desc id="desc">展示 PDA 页面围绕一条记录完成任务、扫码、校验、提交、异常恢复和真机验收的设计闭环。</desc>
+  <style>
+    text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .bg { fill: #ffffff; }
+    .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
+    .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
+    .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
+    .orange { fill: #fff7ed; stroke: #fed7aa; stroke-width: 1.2; }
+    .red { fill: #fef2f2; stroke: #fecaca; stroke-width: 1.2; }
+    .purple { fill: #faf5ff; stroke: #ddd6fe; stroke-width: 1.2; }
+    .title { fill: #111827; font-size: 24px; font-weight: 700; }
+    .subtitle { fill: #6b7280; font-size: 13px; }
+    .label { fill: #111827; font-size: 14px; font-weight: 700; }
+    .body { fill: #111827; font-size: 13px; }
+    .small { fill: #6b7280; font-size: 12px; }
+    .tiny { fill: #6b7280; font-size: 11px; }
+    .buttonText { fill: #ffffff; font-size: 15px; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9333ea"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="960" height="600"/>
+  <text x="48" y="56" class="title">PDA 页面围绕“一条记录”设计</text>
+  <text x="48" y="82" class="subtitle">先保证现场人员能快速完成当前记录，再决定哪些信息后置、折叠或转到查询页。</text>
+
+  <rect x="56" y="122" width="320" height="420" rx="28" fill="#111827"/>
+  <rect x="82" y="156" width="268" height="350" rx="12" fill="#ffffff"/>
+  <rect x="82" y="156" width="268" height="42" rx="12" fill="#f3f4f6"/>
+  <text x="104" y="182" class="label">收货单 SH-1024</text>
+  <text x="328" y="182" text-anchor="end" class="small">18/24</text>
+
+  <rect x="100" y="214" width="232" height="54" rx="8" class="orange"/>
+  <text x="116" y="237" class="label">请扫描物料码</text>
+  <text x="116" y="255" class="small">硬件扫码枪触发，输入框保持焦点</text>
+
+  <rect x="100" y="282" width="232" height="82" rx="8" class="green"/>
+  <text x="116" y="307" class="label">M-10086 托盘连接件</text>
+  <text x="116" y="333" class="body">应收 24，已收 18</text>
+  <text x="116" y="352" class="body">本次数量：6</text>
+
+  <rect x="100" y="376" width="232" height="40" rx="8" class="blue"/>
+  <text x="116" y="401" class="body">成功后清空当前项，继续下一条</text>
+
+  <rect x="100" y="442" width="232" height="48" rx="8" fill="#2563eb"/>
+  <text x="216" y="466" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认收货</text>
+  <text x="216" y="523" text-anchor="middle" class="tiny">主按钮 48px，底部不遮挡记录</text>
+
+  <rect x="428" y="124" width="154" height="66" rx="8" class="blue"/>
+  <text x="452" y="151" class="label">1 任务</text>
+  <text x="452" y="174" class="small">当前要完成什么</text>
+
+  <path d="M582 157 H640" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="642" y="124" width="154" height="66" rx="8" class="orange"/>
+  <text x="666" y="151" class="label">2 扫码</text>
+  <text x="666" y="174" class="small">最主要输入路径</text>
+
+  <path d="M719 190 V236" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="642" y="238" width="154" height="66" rx="8" class="green"/>
+  <text x="666" y="265" class="label">3 校验</text>
+  <text x="666" y="288" class="small">匹配、数量、状态</text>
+
+  <path d="M642 271 H584" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="428" y="238" width="154" height="66" rx="8" class="purple"/>
+  <text x="452" y="265" class="label">4 提交</text>
+  <text x="452" y="288" class="small">写入一条业务记录</text>
+
+  <path d="M505 304 V352" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="428" y="354" width="154" height="76" rx="8" class="panel"/>
+  <text x="452" y="384" class="label">5 继续作业</text>
+  <text x="452" y="408" class="small">焦点回扫码入口</text>
+
+  <path d="M796 271 H844 V390 H584" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
+  <rect x="642" y="354" width="208" height="76" rx="8" class="red"/>
+  <text x="666" y="384" class="label">异常恢复</text>
+  <text x="666" y="408" class="small">扫错、重复、断网都保留现场数据</text>
+
+  <path d="M505 430 V474 H642" stroke="#9333ea" stroke-width="1.6" fill="none" marker-end="url(#arrow-purple)"/>
+  <rect x="642" y="450" width="208" height="68" rx="8" class="panel"/>
+  <text x="666" y="478" class="label">真机验收</text>
+  <text x="666" y="502" class="small">PDA、HAC、弱网、连续扫码</text>
+
+  <g transform="translate(428,552)">
+    <line x1="0" y1="8" x2="30" y2="8" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+    <text x="40" y="12" class="tiny">主流程</text>
+    <line x1="112" y1="8" x2="142" y2="8" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrow-red)"/>
+    <text x="152" y="12" class="tiny">异常恢复</text>
+    <line x1="246" y1="8" x2="276" y2="8" stroke="#9333ea" stroke-width="1.6" marker-end="url(#arrow-purple)"/>
+    <text x="286" y="12" class="tiny">验收闭环</text>
+  </g>
+</svg>

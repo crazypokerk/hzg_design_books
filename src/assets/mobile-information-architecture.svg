@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">PDA 页面信息架构</title>
+  <desc id="desc">展示 PDA 连续作业页首屏如何安排顶部状态、扫码区、当前记录、异常提示、最近记录和底部主操作。</desc>
+  <style>
+    text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .bg { fill: #ffffff; }
+    .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
+    .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
+    .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
+    .orange { fill: #fff7ed; stroke: #fed7aa; stroke-width: 1.2; }
+    .red { fill: #fef2f2; stroke: #fecaca; stroke-width: 1.2; }
+    .title { fill: #111827; font-size: 24px; font-weight: 700; }
+    .subtitle { fill: #6b7280; font-size: 13px; }
+    .label { fill: #111827; font-size: 14px; font-weight: 700; }
+    .body { fill: #111827; font-size: 13px; }
+    .small { fill: #6b7280; font-size: 12px; }
+    .tiny { fill: #6b7280; font-size: 11px; }
+    .buttonText { fill: #ffffff; font-size: 15px; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="960" height="600"/>
+  <text x="48" y="56" class="title">首屏只放当前判断</text>
+  <text x="48" y="82" class="subtitle">把信息分层：当前要判断的放首屏，历史、附件、日志后置。</text>
+
+  <rect x="342" y="114" width="276" height="436" rx="30" fill="#111827"/>
+  <rect x="364" y="148" width="232" height="362" rx="12" fill="#ffffff"/>
+  <rect x="364" y="148" width="232" height="42" rx="12" fill="#f3f4f6"/>
+  <text x="386" y="174" class="label">收货单 SH-1024</text>
+  <text x="574" y="174" text-anchor="end" class="small">在线 18/24</text>
+
+  <rect x="382" y="204" width="196" height="56" rx="8" class="orange"/>
+  <text x="398" y="228" class="label">扫码区</text>
+  <text x="398" y="247" class="small">请扫描物料码</text>
+
+  <rect x="382" y="272" width="196" height="92" rx="8" class="green"/>
+  <text x="398" y="296" class="label">当前记录</text>
+  <text x="398" y="321" class="body">M-10086 托盘连接件</text>
+  <text x="398" y="343" class="body">应收 24，已收 18，本次 6</text>
+
+  <rect x="382" y="376" width="196" height="42" rx="8" class="red"/>
+  <text x="398" y="402" class="body">异常时显示原因和下一步</text>
+
+  <rect x="382" y="430" width="196" height="32" rx="8" class="blue"/>
+  <text x="398" y="451" class="small">最近记录：M-10085 已收 3</text>
+
+  <rect x="382" y="476" width="82" height="48" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+  <text x="423" y="500" text-anchor="middle" dominant-baseline="middle" class="body">重扫</text>
+  <rect x="476" y="476" width="102" height="48" rx="8" fill="#2563eb"/>
+  <text x="527" y="500" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认收货</text>
+
+  <rect x="66" y="146" width="208" height="72" rx="8" class="panel"/>
+  <text x="90" y="174" class="label">第一层</text>
+  <text x="90" y="198" class="small">任务、状态、扫码入口、主操作</text>
+  <path d="M274 182 H382" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="66" y="284" width="208" height="82" rx="8" class="panel"/>
+  <text x="90" y="314" class="label">第二层</text>
+  <text x="90" y="338" class="small">当前物料、数量、差异</text>
+  <text x="90" y="358" class="small">让操作者判断这一条</text>
+  <path d="M274 325 H382" stroke="#16a34a" stroke-width="1.6" fill="none" marker-end="url(#arrow-green)"/>
+
+  <rect x="66" y="430" width="208" height="72" rx="8" class="panel"/>
+  <text x="90" y="458" class="label">不要放首屏</text>
+  <text x="90" y="482" class="small">完整历史、附件、日志、低频配置</text>
+
+  <rect x="682" y="172" width="210" height="78" rx="8" class="panel"/>
+  <text x="706" y="202" class="label">扫码区靠上</text>
+  <text x="706" y="226" class="small">扫码后立刻看到识别结果</text>
+  <path d="M682 211 H578" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="682" y="316" width="210" height="82" rx="8" class="panel"/>
+  <text x="706" y="346" class="label">异常不另找入口</text>
+  <text x="706" y="370" class="small">错误原因、重扫、上报放在原位</text>
+  <path d="M682 357 H578" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="682" y="462" width="210" height="72" rx="8" class="panel"/>
+  <text x="706" y="490" class="label">底部主操作</text>
+  <text x="706" y="514" class="small">固定、48px 高、不遮挡内容</text>
+  <path d="M682 498 H578" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+</svg>

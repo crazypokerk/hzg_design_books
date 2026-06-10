@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">PDA 扫码交互行为</title>
+  <desc id="desc">展示 PDA 扫码页的焦点、回车、成功继续、失败保留数据和重复扫码处理。</desc>
+  <style>
+    text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .bg { fill: #ffffff; }
+    .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
+    .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
+    .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
+    .orange { fill: #fff7ed; stroke: #fed7aa; stroke-width: 1.2; }
+    .red { fill: #fef2f2; stroke: #fecaca; stroke-width: 1.2; }
+    .title { fill: #111827; font-size: 24px; font-weight: 700; }
+    .subtitle { fill: #6b7280; font-size: 13px; }
+    .label { fill: #111827; font-size: 14px; font-weight: 700; }
+    .body { fill: #111827; font-size: 13px; }
+    .small { fill: #6b7280; font-size: 12px; }
+    .tiny { fill: #6b7280; font-size: 11px; }
+    .buttonText { fill: #ffffff; font-size: 15px; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="960" height="600"/>
+  <text x="48" y="56" class="title">扫码后，页面要自己接住下一步</text>
+  <text x="48" y="82" class="subtitle">焦点、回车、成功继续和失败恢复都要固定，现场才不会断。</text>
+
+  <rect x="58" y="126" width="304" height="424" rx="28" fill="#111827"/>
+  <rect x="82" y="160" width="256" height="350" rx="12" fill="#ffffff"/>
+  <rect x="82" y="160" width="256" height="40" rx="12" fill="#f3f4f6"/>
+  <text x="104" y="185" class="label">盘点 PD-0901</text>
+  <text x="316" y="185" text-anchor="end" class="small">扫码模式</text>
+
+  <rect x="100" y="216" width="220" height="58" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="116" y="240" class="label">扫码框保持焦点</text>
+  <text x="116" y="259" class="small">等待硬件扫码枪输入</text>
+  <circle cx="304" cy="245" r="5" fill="#2563eb"/>
+
+  <rect x="100" y="288" width="220" height="62" rx="8" class="green"/>
+  <text x="116" y="313" class="label">识别成功</text>
+  <text x="116" y="334" class="body">M-10086 · 应盘 24</text>
+
+  <rect x="100" y="364" width="220" height="48" rx="8" class="orange"/>
+  <text x="116" y="393" class="label">数量：6</text>
+  <text x="300" y="393" text-anchor="end" class="small">回车确认</text>
+
+  <rect x="100" y="446" width="220" height="48" rx="8" fill="#2563eb"/>
+  <text x="210" y="470" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认盘点</text>
+  <text x="210" y="526" text-anchor="middle" class="tiny">成功后清空当前项，焦点回到扫码框</text>
+
+  <rect x="430" y="126" width="154" height="64" rx="8" class="blue"/>
+  <text x="454" y="153" class="label">1 聚焦</text>
+  <text x="454" y="175" class="small">页面打开即能扫</text>
+  <path d="M430 158 H320" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="646" y="126" width="154" height="64" rx="8" class="green"/>
+  <text x="670" y="153" class="label">2 校验</text>
+  <text x="670" y="175" class="small">立即显示状态</text>
+  <path d="M584 158 H644" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="646" y="238" width="154" height="64" rx="8" class="orange"/>
+  <text x="670" y="265" class="label">3 数量</text>
+  <text x="670" y="287" class="small">回车等同主操作</text>
+  <path d="M723 190 V236" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="430" y="238" width="154" height="64" rx="8" class="green"/>
+  <text x="454" y="265" class="label">4 成功继续</text>
+  <text x="454" y="287" class="small">最近记录 + 下一条</text>
+  <path d="M646 270 H586" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <path d="M507 302 V350 H646" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="646" y="330" width="206" height="72" rx="8" class="panel"/>
+  <text x="670" y="358" class="label">提交中锁定</text>
+  <text x="670" y="382" class="small">按钮禁用，服务端仍要防重复</text>
+
+  <path d="M800 158 H874 V457 H640" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
+  <rect x="430" y="414" width="208" height="86" rx="8" class="red"/>
+  <text x="454" y="444" class="label">失败时不清空</text>
+  <text x="454" y="468" class="small">保留码值 M-10086</text>
+  <text x="454" y="488" class="small">给重扫 / 上报异常</text>
+
+  <rect x="430" y="514" width="360" height="32" rx="8" class="orange"/>
+  <text x="454" y="535" class="tiny">重复扫码要有固定规则：防抖、累计、覆盖或查看记录。</text>
+
+  <g transform="translate(646,566)">
+    <line x1="0" y1="8" x2="30" y2="8" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+    <text x="40" y="12" class="tiny">主路径</text>
+    <line x1="112" y1="8" x2="142" y2="8" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrow-red)"/>
+    <text x="152" y="12" class="tiny">失败恢复</text>
+  </g>
+</svg>

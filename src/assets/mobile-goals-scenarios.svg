@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">PDA 页面任务和场景设计</title>
+  <desc id="desc">展示如何从一句话任务拆出现场条件、页面类型、主流程和异常流程。</desc>
+  <style>
+    text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .bg { fill: #ffffff; }
+    .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
+    .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
+    .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
+    .orange { fill: #fff7ed; stroke: #fed7aa; stroke-width: 1.2; }
+    .red { fill: #fef2f2; stroke: #fecaca; stroke-width: 1.2; }
+    .title { fill: #111827; font-size: 24px; font-weight: 700; }
+    .subtitle { fill: #6b7280; font-size: 13px; }
+    .label { fill: #111827; font-size: 14px; font-weight: 700; }
+    .body { fill: #111827; font-size: 13px; }
+    .small { fill: #6b7280; font-size: 12px; }
+    .tiny { fill: #6b7280; font-size: 11px; }
+    .step { fill: #111827; font-size: 13px; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="960" height="600"/>
+  <text x="48" y="56" class="title">先把页面任务钉住</text>
+  <text x="48" y="82" class="subtitle">谁、在哪、扫什么、判断什么说清楚后，页面才不会变成字段堆叠。</text>
+
+  <rect x="56" y="120" width="848" height="90" rx="8" class="blue"/>
+  <text x="84" y="154" class="label">一句话任务</text>
+  <text x="84" y="184" class="body">仓管员在收货现场，用 PDA 扫描物料码，判断是否属于当前收货单，确认数量后继续下一条。</text>
+
+  <rect x="64" y="248" width="206" height="108" rx="8" class="panel"/>
+  <text x="88" y="282" class="label">现场条件</text>
+  <text x="88" y="310" class="small">PDA + 硬件扫码枪</text>
+  <text x="88" y="332" class="small">弱网、戴手套、连续作业</text>
+
+  <rect x="324" y="248" width="206" height="108" rx="8" class="green"/>
+  <text x="348" y="282" class="label">页面类型</text>
+  <text x="348" y="310" class="small">连续作业页</text>
+  <text x="348" y="332" class="small">默认聚焦扫码入口</text>
+
+  <rect x="584" y="248" width="206" height="108" rx="8" class="orange"/>
+  <text x="608" y="282" class="label">关键判断</text>
+  <text x="608" y="310" class="small">物料是否匹配收货单</text>
+  <text x="608" y="332" class="small">数量是否可提交</text>
+
+  <path d="M270 302 H322" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M530 302 H582" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="78" y="430" width="112" height="50" rx="8" class="blue"/>
+  <text x="134" y="460" text-anchor="middle" class="step">进入任务</text>
+  <path d="M190 455 H246" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="248" y="430" width="112" height="50" rx="8" class="green"/>
+  <text x="304" y="460" text-anchor="middle" class="step">扫码</text>
+  <path d="M360 455 H416" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="418" y="430" width="112" height="50" rx="8" class="green"/>
+  <text x="474" y="460" text-anchor="middle" class="step">校验</text>
+  <path d="M530 455 H586" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="588" y="430" width="132" height="50" rx="8" class="blue"/>
+  <text x="654" y="460" text-anchor="middle" class="step">确认提交</text>
+  <path d="M720 455 H776" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="778" y="430" width="112" height="50" rx="8" class="panel"/>
+  <text x="834" y="460" text-anchor="middle" class="step">下一条</text>
+
+  <path d="M474 430 V386 H794 V430" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
+  <rect x="632" y="364" width="250" height="44" rx="8" class="red"/>
+  <text x="656" y="391" class="body">异常：保留码值，给重扫或上报</text>
+
+  <g transform="translate(56,552)">
+    <line x1="0" y1="8" x2="30" y2="8" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+    <text x="40" y="12" class="tiny">主流程</text>
+    <line x1="112" y1="8" x2="142" y2="8" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrow-red)"/>
+    <text x="152" y="12" class="tiny">异常流程</text>
+    <text x="296" y="12" class="tiny">任务边界清楚后，再决定字段、按钮和验收标准。</text>
+  </g>
+</svg>
