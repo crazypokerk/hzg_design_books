@@ -4,6 +4,10 @@
   <style>
     text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
     .bg { fill: #ffffff; }
+    .device { fill: #111827; stroke: #020617; stroke-width: 1.5; }
+    .rail { fill: #0f172a; opacity: .9; }
+    .bezel { fill: #1f2937; }
+    .screen { fill: #f8fafc; stroke: #334155; stroke-width: 1.2; }
     .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
     .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
     .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
@@ -30,33 +34,41 @@
   <text x="48" y="56" class="title">扫码后，页面要自己接住下一步</text>
   <text x="48" y="82" class="subtitle">焦点、回车、成功继续和失败恢复都要固定，现场才不会断。</text>
 
-  <rect x="58" y="126" width="304" height="424" rx="28" fill="#111827"/>
-  <rect x="82" y="160" width="256" height="350" rx="12" fill="#ffffff"/>
-  <rect x="82" y="160" width="256" height="40" rx="12" fill="#f3f4f6"/>
-  <text x="104" y="185" class="label">盘点 PD-0901</text>
-  <text x="316" y="185" text-anchor="end" class="small">扫码模式</text>
+  <g id="pda-interaction">
+    <rect x="72" y="120" width="272" height="438" rx="34" class="device"/>
+    <rect x="82" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="322" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="64" y="262" width="10" height="88" rx="5" fill="#f59e0b"/>
+    <rect x="342" y="244" width="8" height="66" rx="4" fill="#2563eb"/>
+    <rect x="118" y="138" width="180" height="30" rx="15" class="bezel"/>
+    <rect x="181" y="150" width="54" height="6" rx="3" fill="#475569"/>
 
-  <rect x="100" y="216" width="220" height="58" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-  <text x="116" y="240" class="label">扫码框保持焦点</text>
-  <text x="116" y="259" class="small">等待硬件扫码枪输入</text>
-  <circle cx="304" cy="245" r="5" fill="#2563eb"/>
+    <rect x="100" y="184" width="216" height="328" rx="14" class="screen"/>
+    <rect x="100" y="184" width="216" height="38" rx="14" fill="#eef2f7"/>
+    <text x="118" y="208" class="label">盘点 PD-0901</text>
+    <text x="296" y="208" text-anchor="end" class="small">扫码模式</text>
+    <rect x="118" y="238" width="180" height="58" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="132" y="261" class="label">扫码框保持焦点</text>
+    <text x="132" y="281" class="small">等待扫码枪输入</text>
+    <circle cx="282" cy="268" r="5" fill="#2563eb"/>
+    <rect x="118" y="310" width="180" height="58" rx="8" class="green"/>
+    <text x="132" y="335" class="label">识别成功</text>
+    <text x="132" y="356" class="body">M-10086 · 应盘 24</text>
+    <rect x="118" y="382" width="180" height="44" rx="8" class="orange"/>
+    <text x="132" y="409" class="label">数量：6</text>
+    <text x="280" y="409" text-anchor="end" class="small">回车确认</text>
 
-  <rect x="100" y="288" width="220" height="62" rx="8" class="green"/>
-  <text x="116" y="313" class="label">识别成功</text>
-  <text x="116" y="334" class="body">M-10086 · 应盘 24</text>
-
-  <rect x="100" y="364" width="220" height="48" rx="8" class="orange"/>
-  <text x="116" y="393" class="label">数量：6</text>
-  <text x="300" y="393" text-anchor="end" class="small">回车确认</text>
-
-  <rect x="100" y="446" width="220" height="48" rx="8" fill="#2563eb"/>
-  <text x="210" y="470" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认盘点</text>
-  <text x="210" y="526" text-anchor="middle" class="tiny">成功后清空当前项，焦点回到扫码框</text>
+    <rect x="118" y="452" width="180" height="48" rx="8" fill="#2563eb"/>
+    <text x="208" y="476" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认盘点</text>
+    <circle cx="136" cy="536" r="7" fill="#334155"/>
+    <rect x="176" y="529" width="64" height="14" rx="7" fill="#334155"/>
+    <circle cx="280" cy="536" r="7" fill="#334155"/>
+  </g>
 
   <rect x="430" y="126" width="154" height="64" rx="8" class="blue"/>
   <text x="454" y="153" class="label">1 聚焦</text>
   <text x="454" y="175" class="small">页面打开即能扫</text>
-  <path d="M430 158 H320" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M430 158 H316" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
 
   <rect x="646" y="126" width="154" height="64" rx="8" class="green"/>
   <text x="670" y="153" class="label">2 校验</text>
@@ -84,8 +96,8 @@
   <text x="454" y="468" class="small">保留码值 M-10086</text>
   <text x="454" y="488" class="small">给重扫 / 上报异常</text>
 
-  <rect x="430" y="514" width="360" height="32" rx="8" class="orange"/>
-  <text x="454" y="535" class="tiny">重复扫码要有固定规则：防抖、累计、覆盖或查看记录。</text>
+  <rect x="430" y="520" width="360" height="32" rx="8" class="orange"/>
+  <text x="454" y="541" class="tiny">重复扫码要有固定规则：防抖、累计、覆盖或查看记录。</text>
 
   <g transform="translate(646,566)">
     <line x1="0" y1="8" x2="30" y2="8" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arrow-blue)"/>

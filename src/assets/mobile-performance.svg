@@ -4,6 +4,10 @@
   <style>
     text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
     .bg { fill: #ffffff; }
+    .device { fill: #111827; stroke: #020617; stroke-width: 1.5; }
+    .rail { fill: #0f172a; opacity: .9; }
+    .bezel { fill: #1f2937; }
+    .screen { fill: #f8fafc; stroke: #334155; stroke-width: 1.2; }
     .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
     .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
     .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
@@ -33,26 +37,38 @@
   <text x="48" y="56" class="title">真实设备能跑，才算能上线</text>
   <text x="48" y="82" class="subtitle">首屏轻加载，断网不丢数据，恢复后能补传，最后用目标 PDA 验收。</text>
 
-  <rect x="54" y="126" width="292" height="410" rx="28" fill="#111827"/>
-  <rect x="78" y="160" width="244" height="338" rx="12" fill="#ffffff"/>
-  <rect x="78" y="160" width="244" height="40" rx="12" fill="#f3f4f6"/>
-  <text x="100" y="185" class="label">离线收货</text>
-  <text x="300" y="185" text-anchor="end" class="small">弱网</text>
-  <rect x="96" y="216" width="208" height="58" rx="8" class="blue"/>
-  <text x="112" y="240" class="label">首屏轻加载</text>
-  <text x="112" y="259" class="small">任务、库位、扫码入口先可用</text>
-  <rect x="96" y="288" width="208" height="62" rx="8" class="orange"/>
-  <text x="112" y="313" class="label">断网暂存</text>
-  <text x="112" y="334" class="body">本地待补传：3 条</text>
-  <rect x="96" y="364" width="208" height="44" rx="8" class="red"/>
-  <text x="112" y="391" class="body">提交超时：结果待确认</text>
-  <rect x="96" y="442" width="208" height="48" rx="8" fill="#2563eb"/>
-  <text x="200" y="466" text-anchor="middle" dominant-baseline="middle" class="buttonText">继续扫码</text>
+  <g id="pda-performance">
+    <rect x="70" y="120" width="272" height="438" rx="34" class="device"/>
+    <rect x="80" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="320" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="62" y="262" width="10" height="88" rx="5" fill="#f59e0b"/>
+    <rect x="340" y="244" width="8" height="66" rx="4" fill="#2563eb"/>
+    <rect x="116" y="138" width="180" height="30" rx="15" class="bezel"/>
+    <rect x="179" y="150" width="54" height="6" rx="3" fill="#475569"/>
+
+    <rect x="98" y="184" width="216" height="328" rx="14" class="screen"/>
+    <rect x="98" y="184" width="216" height="38" rx="14" fill="#eef2f7"/>
+    <text x="116" y="208" class="label">离线收货</text>
+    <text x="294" y="208" text-anchor="end" class="small">弱网</text>
+    <rect x="116" y="238" width="180" height="56" rx="8" class="blue"/>
+    <text x="130" y="262" class="label">首屏轻加载</text>
+    <text x="130" y="281" class="small">扫码入口先可用</text>
+    <rect x="116" y="308" width="180" height="60" rx="8" class="orange"/>
+    <text x="130" y="333" class="label">断网暂存</text>
+    <text x="130" y="354" class="body">本地待补传：3 条</text>
+    <rect x="116" y="382" width="180" height="42" rx="8" class="red"/>
+    <text x="130" y="408" class="body">提交超时：待确认</text>
+    <rect x="116" y="452" width="180" height="48" rx="8" fill="#2563eb"/>
+    <text x="206" y="476" text-anchor="middle" dominant-baseline="middle" class="buttonText">继续扫码</text>
+    <circle cx="134" cy="536" r="7" fill="#334155"/>
+    <rect x="174" y="529" width="64" height="14" rx="7" fill="#334155"/>
+    <circle cx="278" cy="536" r="7" fill="#334155"/>
+  </g>
 
   <rect x="408" y="124" width="154" height="70" rx="8" class="blue"/>
   <text x="432" y="153" class="label">轻首屏</text>
   <text x="432" y="176" class="small">不等大列表和附件</text>
-  <path d="M346 244 H406 V159" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M358 268 H406 V159" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
 
   <rect x="636" y="124" width="188" height="70" rx="8" class="orange"/>
   <text x="660" y="153" class="label">本地队列</text>

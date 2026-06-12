@@ -4,6 +4,10 @@
   <style>
     text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
     .bg { fill: #ffffff; }
+    .device { fill: #111827; stroke: #020617; stroke-width: 1.5; }
+    .bezel { fill: #1f2937; }
+    .rail { fill: #0f172a; opacity: .9; }
+    .screen { fill: #f8fafc; stroke: #334155; stroke-width: 1.2; }
     .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
     .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
     .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
@@ -34,27 +38,37 @@
   <text x="48" y="56" class="title">PDA 页面围绕“一条记录”设计</text>
   <text x="48" y="82" class="subtitle">先保证现场人员能快速完成当前记录，再决定哪些信息后置、折叠或转到查询页。</text>
 
-  <rect x="56" y="122" width="320" height="420" rx="28" fill="#111827"/>
-  <rect x="82" y="156" width="268" height="350" rx="12" fill="#ffffff"/>
-  <rect x="82" y="156" width="268" height="42" rx="12" fill="#f3f4f6"/>
-  <text x="104" y="182" class="label">收货单 SH-1024</text>
-  <text x="328" y="182" text-anchor="end" class="small">18/24</text>
+  <g id="pda-overview">
+    <rect x="58" y="120" width="274" height="438" rx="34" class="device"/>
+    <rect x="68" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="310" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="50" y="262" width="10" height="88" rx="5" fill="#f59e0b"/>
+    <rect x="330" y="244" width="8" height="66" rx="4" fill="#2563eb"/>
+    <rect x="104" y="138" width="182" height="30" rx="15" class="bezel"/>
+    <rect x="168" y="150" width="54" height="6" rx="3" fill="#475569"/>
+    <circle cx="238" cy="153" r="4" fill="#0f172a"/>
+    <circle cx="253" cy="153" r="4" fill="#22c55e"/>
 
-  <rect x="100" y="214" width="232" height="54" rx="8" class="orange"/>
-  <text x="116" y="237" class="label">请扫描物料码</text>
-  <text x="116" y="255" class="small">硬件扫码枪触发，输入框保持焦点</text>
+    <rect x="86" y="184" width="218" height="328" rx="14" class="screen"/>
+    <rect x="86" y="184" width="218" height="38" rx="14" fill="#eef2f7"/>
+    <text x="104" y="208" class="label">收货单 SH-1024</text>
+    <text x="284" y="208" text-anchor="end" class="small">18/24</text>
 
-  <rect x="100" y="282" width="232" height="82" rx="8" class="green"/>
-  <text x="116" y="307" class="label">M-10086 托盘连接件</text>
-  <text x="116" y="333" class="body">应收 24，已收 18</text>
-  <text x="116" y="352" class="body">本次数量：6</text>
+    <rect x="104" y="238" width="182" height="54" rx="8" class="orange"/>
+    <text x="118" y="261" class="label">请扫描物料码</text>
+    <text x="118" y="280" class="small">扫码枪触发，保持焦点</text>
+    <rect x="104" y="306" width="182" height="72" rx="8" class="green"/>
+    <text x="118" y="332" class="label">M-10086 托盘连接件</text>
+    <text x="118" y="355" class="body">应收 24，已收 18，本次 6</text>
+    <rect x="104" y="392" width="182" height="36" rx="8" class="blue"/>
+    <text x="118" y="415" class="small">成功后继续下一条</text>
 
-  <rect x="100" y="376" width="232" height="40" rx="8" class="blue"/>
-  <text x="116" y="401" class="body">成功后清空当前项，继续下一条</text>
-
-  <rect x="100" y="442" width="232" height="48" rx="8" fill="#2563eb"/>
-  <text x="216" y="466" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认收货</text>
-  <text x="216" y="523" text-anchor="middle" class="tiny">主按钮 48px，底部不遮挡记录</text>
+    <rect x="104" y="450" width="182" height="48" rx="8" fill="#2563eb"/>
+    <text x="195" y="474" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认收货</text>
+    <circle cx="122" cy="536" r="7" fill="#334155"/>
+    <rect x="160" y="529" width="70" height="14" rx="7" fill="#334155"/>
+    <circle cx="268" cy="536" r="7" fill="#334155"/>
+  </g>
 
   <rect x="428" y="124" width="154" height="66" rx="8" class="blue"/>
   <text x="452" y="151" class="label">1 任务</text>

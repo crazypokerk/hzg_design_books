@@ -2,13 +2,13 @@
   <title id="title">PDA 小屏视觉规范</title>
   <desc id="desc">用可用示例和风险示例对比展示 PDA 页面在字号、按钮高度、状态提示、长文本和小屏宽度上的视觉规则。</desc>
   <style>
-    text {
-      font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
-      letter-spacing: 0;
-    }
+    text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
     .bg { fill: #ffffff; }
+    .device { fill: #111827; stroke: #020617; stroke-width: 1.5; }
+    .rail { fill: #0f172a; opacity: .9; }
+    .bezel { fill: #1f2937; }
+    .screen { fill: #f8fafc; stroke: #334155; stroke-width: 1.2; }
     .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
-    .soft { fill: #f8fafc; stroke: #e5e7eb; stroke-width: 1.2; }
     .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
     .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
     .orange { fill: #fff7ed; stroke: #fed7aa; stroke-width: 1.2; }
@@ -24,89 +24,95 @@
     .button { fill: #2563eb; }
     .buttonText { fill: #ffffff; font-size: 16px; font-weight: 700; }
     .dangerText { fill: #dc2626; font-size: 12px; font-weight: 700; }
-    .ruler { stroke: #2563eb; stroke-width: 1.4; fill: none; }
     .risk { fill: #991b1b; font-size: 11px; }
+    .ruler { stroke: #2563eb; stroke-width: 1.4; fill: none; }
   </style>
   <defs>
     <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
     </marker>
-    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
-    </marker>
   </defs>
 
   <rect class="bg" width="960" height="600"/>
   <text x="48" y="56" class="title">小屏先保证看得清、点得准</text>
-  <text x="48" y="82" class="subtitle">示意图按 PDA 内容宽度 280px 绘制：正文、按钮、状态和底栏的比例要和规则一致。</text>
+  <text x="48" y="82" class="subtitle">示意图按 PDA 内容宽度绘制：正文、按钮、状态和底栏的比例要和规则一致。</text>
 
-  <text x="56" y="122" class="h2">可用示例：280px 内容宽度</text>
-  <rect x="54" y="140" width="332" height="404" rx="28" fill="#111827"/>
-  <rect x="80" y="174" width="280" height="334" rx="12" fill="#ffffff"/>
-  <rect x="80" y="174" width="280" height="42" rx="12" fill="#f3f4f6"/>
-  <text x="102" y="199" class="h2">盘点任务 PD-0901</text>
-  <text x="338" y="199" text-anchor="end" class="helper">18/24</text>
+  <text x="52" y="122" class="h2">可用示例：280px 内容宽度</text>
+  <g id="pda-visual-good">
+    <rect x="44" y="140" width="346" height="414" rx="34" class="device"/>
+    <rect x="54" y="168" width="12" height="314" rx="6" class="rail"/>
+    <rect x="368" y="168" width="12" height="314" rx="6" class="rail"/>
+    <rect x="36" y="268" width="10" height="86" rx="5" fill="#f59e0b"/>
+    <rect x="388" y="250" width="8" height="64" rx="4" fill="#2563eb"/>
+    <rect x="118" y="156" width="198" height="30" rx="15" class="bezel"/>
+    <rect x="186" y="168" width="60" height="6" rx="3" fill="#475569"/>
 
-  <rect x="96" y="230" width="248" height="82" rx="8" class="blue"/>
-  <text x="112" y="255" class="body-strong">当前物料</text>
-  <text x="112" y="283" class="value">M-10086</text>
-  <text x="112" y="303" class="body">托盘连接件，长名称自动换行</text>
+    <rect x="78" y="198" width="280" height="330" rx="14" class="screen"/>
+    <rect x="78" y="198" width="280" height="42" rx="14" fill="#eef2f7"/>
+    <text x="100" y="224" class="h2">盘点任务 PD-0901</text>
+    <text x="336" y="224" text-anchor="end" class="helper">18/24</text>
+    <rect x="96" y="254" width="244" height="78" rx="8" class="blue"/>
+    <text x="112" y="278" class="body-strong">当前物料</text>
+    <text x="112" y="305" class="value">M-10086</text>
+    <text x="112" y="324" class="body">托盘连接件，长名称自动换行</text>
+    <rect x="96" y="344" width="244" height="42" rx="8" class="green"/>
+    <text x="112" y="370" class="body-strong">已记录，焦点回到扫码框</text>
+    <text x="96" y="410" class="body">库位 A-03-02</text>
+    <text x="96" y="434" class="body">数量 12 / 应盘 24</text>
+    <line x1="96" y1="452" x2="340" y2="452" stroke="#e5e7eb"/>
+    <rect x="96" y="466" width="244" height="48" rx="8" class="button"/>
+    <text x="218" y="490" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认盘点</text>
+    <circle cx="144" cy="542" r="7" fill="#334155"/>
+    <rect x="186" y="535" width="64" height="14" rx="7" fill="#334155"/>
+    <circle cx="292" cy="542" r="7" fill="#334155"/>
+  </g>
 
-  <rect x="96" y="324" width="248" height="44" rx="8" class="green"/>
-  <text x="112" y="351" class="body-strong">已记录，焦点回到扫码框</text>
+  <line x1="404" y1="466" x2="404" y2="514" class="ruler"/>
+  <line x1="396" y1="466" x2="412" y2="466" class="ruler"/>
+  <line x1="396" y1="514" x2="412" y2="514" class="ruler"/>
+  <text x="422" y="494" class="helper">主按钮 48px</text>
+  <path d="M418 490 H344" stroke="#2563eb" stroke-width="1.4" fill="none" marker-end="url(#arrow-blue)"/>
 
-  <text x="96" y="394" class="body">库位 A-03-02</text>
-  <text x="96" y="420" class="body">数量 12 / 应盘 24</text>
+  <text x="456" y="122" class="h2">风险示例：尺寸缩小后比例失真</text>
+  <g id="pda-visual-risk">
+    <rect x="454" y="140" width="178" height="258" rx="24" class="device"/>
+    <rect x="462" y="166" width="8" height="184" rx="4" class="rail"/>
+    <rect x="620" y="166" width="8" height="184" rx="4" class="rail"/>
+    <rect x="448" y="230" width="7" height="52" rx="3.5" fill="#f59e0b"/>
+    <rect x="486" y="154" width="114" height="18" rx="9" class="bezel"/>
+    <rect x="474" y="184" width="138" height="168" rx="8" class="screen"/>
+    <rect x="486" y="198" width="114" height="48" rx="6" class="red"/>
+    <text x="496" y="218" class="risk">M-10086</text>
+    <text x="496" y="235" class="risk">物料名称被压缩</text>
+    <rect x="486" y="260" width="114" height="28" rx="6" fill="#fee2e2" stroke="#fecaca"/>
+    <text x="543" y="276" text-anchor="middle" dominant-baseline="middle" class="risk">提示不明显</text>
+    <rect x="486" y="316" width="114" height="32" rx="6" fill="#2563eb"/>
+    <text x="543" y="332" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="11" font-weight="700">确认盘点</text>
+    <text x="543" y="384" text-anchor="middle" class="tiny">正文 11px / 按钮 32px</text>
+  </g>
+  <line x1="646" y1="316" x2="646" y2="348" stroke="#dc2626" stroke-width="1.4"/>
+  <line x1="638" y1="316" x2="654" y2="316" stroke="#dc2626" stroke-width="1.4"/>
+  <line x1="638" y1="348" x2="654" y2="348" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="660" y="337" class="dangerText">32px 太小</text>
 
-  <line x1="96" y1="438" x2="344" y2="438" stroke="#e5e7eb"/>
-  <rect x="96" y="452" width="248" height="48" rx="8" class="button"/>
-  <text x="220" y="476" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认盘点</text>
-  <text x="220" y="523" text-anchor="middle" class="tiny">底部留白，不压住最后一条记录</text>
+  <rect x="698" y="140" width="214" height="74" rx="8" class="panel"/>
+  <text x="720" y="168" class="h2">字号层级</text>
+  <text x="720" y="194" class="body">正文 14px 起步</text>
+  <text x="840" y="194" class="value">24</text>
+  <text x="874" y="194" class="helper">关键数值</text>
 
-  <line x1="386" y1="452" x2="386" y2="500" class="ruler"/>
-  <line x1="378" y1="452" x2="394" y2="452" class="ruler"/>
-  <line x1="378" y1="500" x2="394" y2="500" class="ruler"/>
-  <text x="406" y="480" class="helper">主按钮 48px</text>
-  <path d="M402 476 H350" stroke="#2563eb" stroke-width="1.4" fill="none" marker-end="url(#arrow-blue)"/>
+  <rect x="698" y="238" width="214" height="92" rx="8" class="panel"/>
+  <text x="720" y="266" class="h2">按钮和热区</text>
+  <rect x="720" y="282" width="128" height="48" rx="8" class="button"/>
+  <text x="784" y="306" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认收货</text>
+  <text x="862" y="304" class="helper">48px 高</text>
+  <text x="720" y="350" class="tiny">图标热区至少 40 x 40px，相邻间距 8px。</text>
 
-  <text x="432" y="122" class="h2">风险示例：看似省空间，现场更难用</text>
-  <rect x="430" y="140" width="178" height="254" rx="20" fill="#111827"/>
-  <rect x="446" y="166" width="146" height="198" rx="8" fill="#ffffff"/>
-  <rect x="458" y="184" width="122" height="54" rx="6" class="red"/>
-  <text x="470" y="205" class="risk">M-10086</text>
-  <text x="470" y="223" class="risk">托盘连接件名称被压缩</text>
-  <rect x="458" y="252" width="122" height="30" rx="6" fill="#fee2e2" stroke="#fecaca"/>
-  <text x="519" y="268" text-anchor="middle" dominant-baseline="middle" class="risk">提示不明显</text>
-  <rect x="458" y="316" width="122" height="32" rx="6" fill="#2563eb"/>
-  <text x="519" y="332" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="11" font-weight="700">确认盘点</text>
-  <line x1="616" y1="316" x2="616" y2="348" stroke="#dc2626" stroke-width="1.4"/>
-  <line x1="610" y1="316" x2="622" y2="316" stroke="#dc2626" stroke-width="1.4"/>
-  <line x1="610" y1="348" x2="622" y2="348" stroke="#dc2626" stroke-width="1.4"/>
-  <text x="630" y="337" class="dangerText">32px 太小</text>
-  <text x="458" y="386" class="tiny">反面示例：尺寸差异故意缩小</text>
+  <rect x="698" y="374" width="214" height="72" rx="8" class="green"/>
+  <text x="720" y="402" class="h2">状态要可读</text>
+  <text x="720" y="428" class="body">颜色 + 文案 + 下一步动作</text>
 
-  <rect x="666" y="140" width="232" height="74" rx="8" class="panel"/>
-  <text x="690" y="168" class="h2">字号层级</text>
-  <text x="690" y="194" class="body">正文 14px 起步</text>
-  <text x="812" y="194" class="value">24</text>
-  <text x="846" y="194" class="helper">关键数值更醒目</text>
-
-  <rect x="666" y="232" width="232" height="92" rx="8" class="panel"/>
-  <text x="690" y="260" class="h2">按钮和热区</text>
-  <rect x="690" y="276" width="134" height="48" rx="8" class="button"/>
-  <text x="757" y="300" text-anchor="middle" dominant-baseline="middle" class="buttonText">确认收货</text>
-  <text x="840" y="298" class="helper">48px 高</text>
-  <text x="690" y="344" class="tiny">图标热区至少 40 x 40px，相邻间距 8px。</text>
-
-  <rect x="666" y="348" width="232" height="72" rx="8" class="green"/>
-  <text x="690" y="376" class="h2">状态要可读</text>
-  <text x="690" y="402" class="body">颜色 + 文案 + 下一步动作</text>
-
-  <rect x="666" y="444" width="232" height="100" rx="8" class="red"/>
-  <text x="690" y="472" class="h2">风险对照</text>
-  <text x="690" y="498" class="body">正文 11px、按钮 32px</text>
-  <text x="690" y="520" class="body">强光和手套场景更容易误读误触</text>
-  <rect x="690" y="532" width="48" height="8" rx="3" class="orange"/>
-  <rect x="750" y="532" width="58" height="8" rx="3" class="blue"/>
-  <rect x="820" y="532" width="70" height="8" rx="3" class="green"/>
+  <rect x="698" y="470" width="214" height="78" rx="8" class="red"/>
+  <text x="720" y="498" class="h2">风险对照</text>
+  <text x="720" y="524" class="body">强光和手套场景更容易误读误触</text>
 </svg>
