@@ -32,6 +32,7 @@ export default defineConfig({
 							label: '典型场景和功能',
 							items: [
 								{ label: '总览', slug: 'guides/scenarios' },
+								{ label: '插件功能列表', slug: 'guides/scenarios/plugin-function-list' },
 								{ label: '安卓容器（PDA）', slug: 'guides/scenarios/hac-android-container-pda' },
 								{ label: '调试', slug: 'guides/scenarios/how-to-debug-hac' },
 								{ label: '日志', slug: 'guides/scenarios/logs-hac' },
