@@ -101,9 +101,9 @@ sidebar:
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 开始监听物理按键 | 待补充 |
-| 停止监听指定物理按键 | 待补充 |
-| 停止监听所有物理按键 | 待补充 |
+| 开始监听物理按键 | [物理按键监听](./physical-key-listening/) |
+| 停止监听指定物理按键 | [物理按键监听](./physical-key-listening/) |
+| 停止监听所有物理按键 | [物理按键监听](./physical-key-listening/) |
 | 发送广播 | [APP 交互](./app-interaction/) |
 | 开始接收广播 | [APP 交互](./app-interaction/) |
 | 停止监听广播 | [APP 交互](./app-interaction/) |
