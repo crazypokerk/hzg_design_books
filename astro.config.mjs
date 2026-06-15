@@ -39,6 +39,7 @@ export default defineConfig({
 								{ label: '「功能」 NFC', slug: 'guides/scenarios/nfc-tag-reading' },
 								{ label: '「功能」 离线模式', slug: 'guides/scenarios/offline-model-hac' },
 								{ label: '「功能」 拍摄', slug: 'guides/scenarios/camera-capture' },
+								{ label: '「功能」 扫描', slug: 'guides/scenarios/scanner' },
 							],
 						},
 						{
