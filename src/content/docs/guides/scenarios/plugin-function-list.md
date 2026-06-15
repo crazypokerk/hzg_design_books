@@ -80,22 +80,22 @@ sidebar:
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 预览PDF文件 | 待补充 |
+| 预览PDF文件 | [APP 交互](./app-interaction/) |
 | 配置APP的ActionBar | 待补充 |
 | 配置APP的菜单 | 待补充 |
 | 配置扫描头参数 | 待补充 |
 | 配置APP的ActionBar颜色 | 待补充 |
 | 读取ActionBar颜色 | 待补充 |
 | 读取ActionBar颜色到单元格 | 待补充 |
-| 震动提醒 | 待补充 |
-| 播放提示音 | 待补充 |
-| 打开APP的内置页面 | 待补充 |
-| 读取APP信息 | 待补充 |
-| 读取APP信息到单元格 | 待补充 |
-| 读取设备唯一标识 | 待补充 |
-| 拨打电话 | 待补充 |
-| 强制关闭APP | 待补充 |
-| 读取极光推送RegId | 待补充 |
+| 震动提醒 | [APP 交互](./app-interaction/) |
+| 播放提示音 | [APP 交互](./app-interaction/) |
+| 打开APP的内置页面 | [APP 交互](./app-interaction/) |
+| 读取APP信息 | [APP 交互](./app-interaction/) |
+| 读取APP信息到单元格 | [APP 交互](./app-interaction/) |
+| 读取设备唯一标识 | [APP 交互](./app-interaction/) |
+| 拨打电话 | [APP 交互](./app-interaction/) |
+| 强制关闭APP | [APP 交互](./app-interaction/) |
+| 读取极光推送RegId | [APP 交互](./app-interaction/) |
 
 ## 物理按键和广播
 
@@ -104,7 +104,6 @@ sidebar:
 | 开始监听物理按键 | 待补充 |
 | 停止监听指定物理按键 | 待补充 |
 | 停止监听所有物理按键 | 待补充 |
-| 发送广播 | 待补充 |
-| 开始接收广播 | 待补充 |
-| 停止监听广播 | 待补充 |
-
+| 发送广播 | [APP 交互](./app-interaction/) |
+| 开始接收广播 | [APP 交互](./app-interaction/) |
+| 停止监听广播 | [APP 交互](./app-interaction/) |
