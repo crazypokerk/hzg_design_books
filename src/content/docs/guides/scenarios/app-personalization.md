@@ -44,6 +44,8 @@ APP 个性化配置用于调整 `HAC` 的原生外观、顶部操作区、菜单
 
 【配置APP的ActionBar】用于统一配置 APP 顶部固定区域和菜单能力。
 
+![配置APP的ActionBar](../../../../assets/app-personalization-1.png) 
+
 常见配置项：
 
 | 配置项 | 说明 |
@@ -79,6 +81,8 @@ APP 个性化配置用于调整 `HAC` 的原生外观、顶部操作区、菜单
 
 【配置APP的菜单】行为与【配置APP的ActionBar】相同，主要用于配置 APP 菜单相关内容。
 
+![配置APP的菜单](../../../../assets/app-personalization-2.png) 
+
 适合在这些场景使用：
 
 - 只调整菜单项，不调整业务页面。
@@ -90,6 +94,8 @@ APP 个性化配置用于调整 `HAC` 的原生外观、顶部操作区、菜单
 ## 配置扫描头参数
 
 【配置扫描头参数】用于配置扫描头信息。该配置将决定【持续扫描到单元格】等扫描头相关命令是否可以正常使用。
+
+![配置扫描头参数](../../../../assets/app-personalization-3.png) 
 
 扫描头参数通常和设备厂商的广播或 Intent 设置有关，常见内容包括：
 
@@ -117,6 +123,8 @@ APP 个性化配置用于调整 `HAC` 的原生外观、顶部操作区、菜单
 
 【配置APP的ActionBar颜色】用于单独配置 ActionBar 颜色，行为与【配置APP的ActionBar】相同。
 
+![配置APP的ActionBar颜色](../../../../assets/app-personalization-4.png) 
+
 颜色通常用于区分客户、环境或应用类型，例如：
 
 - 生产环境和测试环境使用不同颜色。
@@ -128,6 +136,8 @@ APP 个性化配置用于调整 `HAC` 的原生外观、顶部操作区、菜单
 ## 读取ActionBar颜色
 
 【读取ActionBar颜色】用于读取当前 ActionBar 的颜色，返回格式为 `FFFFFF` 的 RGB。
+
+![读取ActionBar颜色](../../../../assets/app-personalization-5.png) 
 
 常见用途：
 
@@ -149,6 +159,8 @@ APP 个性化配置用于调整 `HAC` 的原生外观、顶部操作区、菜单
 ## 读取ActionBar颜色到单元格
 
 【读取ActionBar颜色到单元格】与【读取ActionBar颜色】能力相同，只是获取 ActionBar 颜色后会赋值给指定单元格。
+
+![读取ActionBar颜色到单元格](../../../../assets/app-personalization-6.png) 
 
 适合在表格式配置页或调试页中使用，让开发者或运维人员直接看到当前颜色值。
 
