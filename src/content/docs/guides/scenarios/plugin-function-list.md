@@ -17,15 +17,15 @@ sidebar:
 | 读取地理位置到单元格 | [定位](./gps-location-demo/) |
 | 读取NFC标签 | [读取 NFC 标签](./nfc-tag-reading/) |
 | 读取NFC标签到单元格 | [读取 NFC 标签](./nfc-tag-reading/) |
-| 扫描BLE设备/标签 | 待补充 |
-| 扫描BLE设备/标签并填充到单元格 | 待补充 |
-| 从BLE设备读取数据 | 待补充 |
-| 从BLE设备读取数据到单元格 | 待补充 |
-| 向BLE设备写入数据 | 待补充 |
-| 向BLE设备写入数据并填充到单元格 | 待补充 |
-| 向BLE设备订阅数据通知 | 待补充 |
-| 向BLE设备订阅数据通知并填充到单元格 | 待补充 |
-| 取消对BLE设备的订阅 | 待补充 |
+| 扫描BLE设备/标签 | [BLE 设备读写](./ble-device/) |
+| 扫描BLE设备/标签并填充到单元格 | [BLE 设备读写](./ble-device/) |
+| 从BLE设备读取数据 | [BLE 设备读写](./ble-device/) |
+| 从BLE设备读取数据到单元格 | [BLE 设备读写](./ble-device/) |
+| 向BLE设备写入数据 | [BLE 设备读写](./ble-device/) |
+| 向BLE设备写入数据并填充到单元格 | [BLE 设备读写](./ble-device/) |
+| 向BLE设备订阅数据通知 | [BLE 设备读写](./ble-device/) |
+| 向BLE设备订阅数据通知并填充到单元格 | [BLE 设备读写](./ble-device/) |
+| 取消对BLE设备的订阅 | [BLE 设备读写](./ble-device/) |
 
 ## 拍摄、录音和本地文件
 
