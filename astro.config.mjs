@@ -36,6 +36,7 @@ export default defineConfig({
 								{ label: '安卓容器（PDA）', slug: 'guides/scenarios/hac-android-container-pda' },
 								{ label: '调试', slug: 'guides/scenarios/how-to-debug-hac' },
 								{ label: '日志', slug: 'guides/scenarios/logs-hac' },
+								{ label: '「功能」 生物识别认证', slug: 'guides/scenarios/biometric-authentication' },
 								{ label: '「功能」 定位', slug: 'guides/scenarios/gps-location-demo' },
 								{ label: '「功能」 NFC', slug: 'guides/scenarios/nfc-tag-reading' },
 								{ label: '「功能」 离线模式', slug: 'guides/scenarios/offline-model-hac' },

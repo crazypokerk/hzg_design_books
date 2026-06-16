@@ -15,6 +15,7 @@ sidebar:
 - [安卓容器（PDA）](./hac-android-container-pda/)：HAC 的安装、配置、扫码广播、设备兼容和常见问题。
 - [调试](./how-to-debug-hac/)：使用 Chrome DevTools 调试 HAC 中的活字格 Web 页面。
 - [日志](./logs-hac/)：查看和收集 HAC 运行日志。
+- [「功能」生物识别认证](./biometric-authentication/)：检测并调用 Android 生物识别或设备密码认证，用于关键操作二次确认。
 - [「功能」定位](./gps-location-demo/)：通过 PDA 交互命令插件获取地理位置。
 - [「功能」NFC](./nfc-tag-reading/)：通过支持 NFC 的 Android 设备读取近场标签。
 - [「功能」离线模式](./offline-model-hac/)：通过离线模式和离线存储支持本地暂存。

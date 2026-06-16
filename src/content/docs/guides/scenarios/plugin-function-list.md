@@ -11,8 +11,8 @@ sidebar:
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 生物认证检测 | 待补充 |
-| 生物认证识别 | 待补充 |
+| 生物认证检测 | [生物识别认证](./biometric-authentication/) |
+| 生物认证识别 | [生物识别认证](./biometric-authentication/) |
 | 读取地理位置 | [定位](./gps-location-demo/) |
 | 读取地理位置到单元格 | [定位](./gps-location-demo/) |
 | 读取NFC标签 | [读取 NFC 标签](./nfc-tag-reading/) |
