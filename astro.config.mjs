@@ -44,6 +44,7 @@ export default defineConfig({
 								{ label: '「功能」 拍摄', slug: 'guides/scenarios/camera-capture' },
 								{ label: '「功能」 扫描', slug: 'guides/scenarios/scanner' },
 								{ label: '「功能」 APP 交互', slug: 'guides/scenarios/app-interaction' },
+								{ label: '「功能」 APP 个性化配置', slug: 'guides/scenarios/app-personalization' },
 								{ label: '「功能」 物理按键监听', slug: 'guides/scenarios/physical-key-listening' },
 							],
 						},

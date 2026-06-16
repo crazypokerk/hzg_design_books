@@ -23,4 +23,5 @@ sidebar:
 - [「功能」拍摄](./camera-capture/)：通过 Android 设备拍摄照片、视频，添加照片水印，录制音频并读取本地文件。
 - [「功能」扫描](./scanner/)：通过激光扫描头和 UHF 扫描器接收扫码或 RFID 标签结果。
 - [「功能」APP 交互](./app-interaction/)：打开 APP 原生页面、读取 APP 与设备信息、预览 PDF、拨打电话、震动提示、播放提示音和发送接收广播。
+- [「功能」APP 个性化配置](./app-personalization/)：配置 ActionBar、菜单、扫描头参数和 ActionBar 颜色。
 - [「功能」物理按键监听](./physical-key-listening/)：监听 PDA 或 Android 设备的指定物理按键，并在按下时触发对应子命令。
