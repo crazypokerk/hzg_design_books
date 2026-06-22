@@ -11,48 +11,48 @@ sidebar:
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 生物认证检测 | [生物识别认证](./biometric-authentication/) |
-| 生物认证识别 | [生物识别认证](./biometric-authentication/) |
-| 读取地理位置 | [定位](./gps-location-demo/) |
-| 读取地理位置到单元格 | [定位](./gps-location-demo/) |
-| 读取NFC标签 | [读取 NFC 标签](./nfc-tag-reading/) |
-| 读取NFC标签到单元格 | [读取 NFC 标签](./nfc-tag-reading/) |
-| 扫描BLE设备/标签 | [BLE 设备读写](./ble-device/) |
-| 扫描BLE设备/标签并填充到单元格 | [BLE 设备读写](./ble-device/) |
-| 从BLE设备读取数据 | [BLE 设备读写](./ble-device/) |
-| 从BLE设备读取数据到单元格 | [BLE 设备读写](./ble-device/) |
-| 向BLE设备写入数据 | [BLE 设备读写](./ble-device/) |
-| 向BLE设备写入数据并填充到单元格 | [BLE 设备读写](./ble-device/) |
-| 向BLE设备订阅数据通知 | [BLE 设备读写](./ble-device/) |
-| 向BLE设备订阅数据通知并填充到单元格 | [BLE 设备读写](./ble-device/) |
-| 取消对BLE设备的订阅 | [BLE 设备读写](./ble-device/) |
+| 生物认证检测 | [生物识别认证](../biometric-authentication/) |
+| 生物认证识别 | [生物识别认证](../biometric-authentication/) |
+| 读取地理位置 | [定位](../gps-location-demo/) |
+| 读取地理位置到单元格 | [定位](../gps-location-demo/) |
+| 读取NFC标签 | [读取 NFC 标签](../nfc-tag-reading/) |
+| 读取NFC标签到单元格 | [读取 NFC 标签](../nfc-tag-reading/) |
+| 扫描BLE设备/标签 | [BLE 设备读写](../ble-device/) |
+| 扫描BLE设备/标签并填充到单元格 | [BLE 设备读写](../ble-device/) |
+| 从BLE设备读取数据 | [BLE 设备读写](../ble-device/) |
+| 从BLE设备读取数据到单元格 | [BLE 设备读写](../ble-device/) |
+| 向BLE设备写入数据 | [BLE 设备读写](../ble-device/) |
+| 向BLE设备写入数据并填充到单元格 | [BLE 设备读写](../ble-device/) |
+| 向BLE设备订阅数据通知 | [BLE 设备读写](../ble-device/) |
+| 向BLE设备订阅数据通知并填充到单元格 | [BLE 设备读写](../ble-device/) |
+| 取消对BLE设备的订阅 | [BLE 设备读写](../ble-device/) |
 
 ## 拍摄、录音和本地文件
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 拍摄照片 | [拍摄](./camera-capture/) |
-| 拍摄照片并将文件路径填充到单元格 | [拍摄](./camera-capture/) |
-| 拍摄视频 | [拍摄](./camera-capture/) |
-| 拍摄视频并将文件路径填充到单元格 | [拍摄](./camera-capture/) |
-| 录制音频 | [拍摄](./camera-capture/) |
-| 录制音频并将文件路径填充到单元格 | [拍摄](./camera-capture/) |
-| 为图片添加水印 | [拍摄](./camera-capture/) |
-| 为图片添加水印并将文件路径填充到单元格 | [拍摄](./camera-capture/) |
-| 读取本地文件 | [拍摄](./camera-capture/) |
+| 拍摄照片 | [拍摄](../camera-capture/) |
+| 拍摄照片并将文件路径填充到单元格 | [拍摄](../camera-capture/) |
+| 拍摄视频 | [拍摄](../camera-capture/) |
+| 拍摄视频并将文件路径填充到单元格 | [拍摄](../camera-capture/) |
+| 录制音频 | [拍摄](../camera-capture/) |
+| 录制音频并将文件路径填充到单元格 | [拍摄](../camera-capture/) |
+| 为图片添加水印 | [拍摄](../camera-capture/) |
+| 为图片添加水印并将文件路径填充到单元格 | [拍摄](../camera-capture/) |
+| 读取本地文件 | [拍摄](../camera-capture/) |
 
 ## 扫码和 UHF
 
 | 插件命令 | 说明页 |
 | --- | --- |
 | 单次扫码（摄像头） | 待补充 |
-| 开始持续扫码（激光头） | [扫描](./scanner/) |
-| 开始监听扫码结果并填充到单元格（激光头） | [扫描](./scanner/) |
-| 停止持续扫码（激光头） | [扫描](./scanner/) |
-| 单次扫码（激光头） | [扫描](./scanner/) |
-| 单次扫码并填充（激光头） | [扫描](./scanner/) |
-| 开始接收UHF扫描结果 | [扫描](./scanner/) |
-| 停止接收UHF扫描结果 | [扫描](./scanner/) |
+| 开始持续扫码（激光头） | [扫描](../scanner/) |
+| 开始监听扫码结果并填充到单元格（激光头） | [扫描](../scanner/) |
+| 停止持续扫码（激光头） | [扫描](../scanner/) |
+| 单次扫码（激光头） | [扫描](../scanner/) |
+| 单次扫码并填充（激光头） | [扫描](../scanner/) |
+| 开始接收UHF扫描结果 | [扫描](../scanner/) |
+| 停止接收UHF扫描结果 | [扫描](../scanner/) |
 
 ## 蓝牙打印
 
@@ -70,40 +70,40 @@ sidebar:
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 设置离线模式 | [离线模式](./offline-model-hac/) |
-| 从离线存储中读取值 | [离线模式](./offline-model-hac/) |
-| 从离线存储中读取值到单元格 | [离线模式](./offline-model-hac/) |
-| 将键值存入离线存储 | [离线模式](./offline-model-hac/) |
-| 从离线存储中删除指定键值 | [离线模式](./offline-model-hac/) |
+| 设置离线模式 | [离线模式](../offline-model-hac/) |
+| 从离线存储中读取值 | [离线模式](../offline-model-hac/) |
+| 从离线存储中读取值到单元格 | [离线模式](../offline-model-hac/) |
+| 将键值存入离线存储 | [离线模式](../offline-model-hac/) |
+| 从离线存储中删除指定键值 | [离线模式](../offline-model-hac/) |
 
 ## APP、系统能力和页面控制
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 预览PDF文件 | [APP 交互](./app-interaction/) |
-| 配置APP的ActionBar | [APP 个性化配置](./app-personalization/) |
-| 配置APP的菜单 | [APP 个性化配置](./app-personalization/) |
-| 配置扫描头参数 | [APP 个性化配置](./app-personalization/) |
-| 配置APP的ActionBar颜色 | [APP 个性化配置](./app-personalization/) |
-| 读取ActionBar颜色 | [APP 个性化配置](./app-personalization/) |
-| 读取ActionBar颜色到单元格 | [APP 个性化配置](./app-personalization/) |
-| 震动提醒 | [APP 交互](./app-interaction/) |
-| 播放提示音 | [APP 交互](./app-interaction/) |
-| 打开APP的内置页面 | [APP 交互](./app-interaction/) |
-| 读取APP信息 | [APP 交互](./app-interaction/) |
-| 读取APP信息到单元格 | [APP 交互](./app-interaction/) |
-| 读取设备唯一标识 | [APP 交互](./app-interaction/) |
-| 拨打电话 | [APP 交互](./app-interaction/) |
-| 强制关闭APP | [APP 交互](./app-interaction/) |
-| 读取极光推送RegId | [APP 交互](./app-interaction/) |
+| 预览PDF文件 | [APP 交互](../app-interaction/) |
+| 配置APP的ActionBar | [APP 个性化配置](../app-personalization/) |
+| 配置APP的菜单 | [APP 个性化配置](../app-personalization/) |
+| 配置扫描头参数 | [APP 个性化配置](../app-personalization/) |
+| 配置APP的ActionBar颜色 | [APP 个性化配置](../app-personalization/) |
+| 读取ActionBar颜色 | [APP 个性化配置](../app-personalization/) |
+| 读取ActionBar颜色到单元格 | [APP 个性化配置](../app-personalization/) |
+| 震动提醒 | [APP 交互](../app-interaction/) |
+| 播放提示音 | [APP 交互](../app-interaction/) |
+| 打开APP的内置页面 | [APP 交互](../app-interaction/) |
+| 读取APP信息 | [APP 交互](../app-interaction/) |
+| 读取APP信息到单元格 | [APP 交互](../app-interaction/) |
+| 读取设备唯一标识 | [APP 交互](../app-interaction/) |
+| 拨打电话 | [APP 交互](../app-interaction/) |
+| 强制关闭APP | [APP 交互](../app-interaction/) |
+| 读取极光推送RegId | [APP 交互](../app-interaction/) |
 
 ## 物理按键和广播
 
 | 插件命令 | 说明页 |
 | --- | --- |
-| 开始监听物理按键 | [物理按键监听](./physical-key-listening/) |
-| 停止监听指定物理按键 | [物理按键监听](./physical-key-listening/) |
-| 停止监听所有物理按键 | [物理按键监听](./physical-key-listening/) |
-| 发送广播 | [APP 交互](./app-interaction/) |
-| 开始接收广播 | [APP 交互](./app-interaction/) |
-| 停止监听广播 | [APP 交互](./app-interaction/) |
+| 开始监听物理按键 | [物理按键监听](../physical-key-listening/) |
+| 停止监听指定物理按键 | [物理按键监听](../physical-key-listening/) |
+| 停止监听所有物理按键 | [物理按键监听](../physical-key-listening/) |
+| 发送广播 | [APP 交互](../app-interaction/) |
+| 开始接收广播 | [APP 交互](../app-interaction/) |
+| 停止监听广播 | [APP 交互](../app-interaction/) |
