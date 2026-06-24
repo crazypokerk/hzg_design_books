@@ -36,7 +36,7 @@ HAC(Huozige Android Container)，简称活字格安卓容器，活字格安卓�
 - 运行环境：**Android版本 >= 8.0，运行内存 >= 2GB**
 - HAC APP：[点击下载](https://github.com/kadbbz/HAC_lowcode_app_for_android_based_on_webview/releases)
 - HAC 插件：[点击下载](https://marketplace.grapecity.com.cn/ApplicationDetails?productID=SP2209070004)
-- 配置码生成器：[一键生成和导出配置码]([HAC配置码](https://hac.app.hzgcloud.cn/config))
+- 配置码生成器：<a href="https://hac.app.hzgcloud.cn/config" target="_blank" rel="noopener noreferrer">一键生成和导出配置码</a>
 
 ## 使用方法
 

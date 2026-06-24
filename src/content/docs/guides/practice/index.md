@@ -15,4 +15,4 @@ description: 面向移动端页面设计的实战训练、演示案例和练习�
 
 ## 已有演示
 
-- [PDA 盘点扫码页设计演示](./pda-inventory-counting/)
+- [「场景一」采购入库](./pda-inventory-counting/)

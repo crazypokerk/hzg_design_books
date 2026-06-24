@@ -52,7 +52,7 @@ export default defineConfig({
 							label: '实战训练和演示',
 							items: [
 								{ label: '总览', slug: 'guides/practice' },
-								{ label: 'PDA 盘点扫码页设计演示', slug: 'guides/practice/pda-inventory-counting' },
+								{ label: '「场景一」采购入库', slug: 'guides/practice/pda-inventory-counting' },
 							],
 							
 						},
