@@ -27,6 +27,10 @@ sidebar:
 - [扫码、按钮和表单怎么动](../mobile/interaction-behavior/)：用于定义焦点、回车和失败恢复。
 - [弱网、旧设备和真机怎么验](../mobile/performance/)：用于定义性能和验收方式。
 
+## 先看效果
+
+![pda-inventory-counting-1](../../../../assets/pda-inventory-counting-1.gif) 
+
 ## 练习目标
 
 把一个“采购入库”需求设计成适合 PDA 现场连续收货的页面。
