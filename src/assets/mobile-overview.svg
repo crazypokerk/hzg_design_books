@@ -94,12 +94,12 @@
   <text x="452" y="384" class="label">5 继续作业</text>
   <text x="452" y="408" class="small">焦点回扫码入口</text>
 
-  <path d="M796 271 H844 V390 H584" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M756 304 L756 352" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
   <rect x="642" y="354" width="208" height="76" rx="8" class="red"/>
   <text x="666" y="384" class="label">异常恢复</text>
   <text x="666" y="408" class="small">扫错、重复、断网都保留现场数据</text>
 
-  <path d="M505 430 V474 H642" stroke="#9333ea" stroke-width="1.6" fill="none" marker-end="url(#arrow-purple)"/>
+  <path d="M582 414 L642 474" stroke="#9333ea" stroke-width="1.6" fill="none" marker-end="url(#arrow-purple)"/>
   <rect x="642" y="450" width="208" height="68" rx="8" class="panel"/>
   <text x="666" y="478" class="label">真机验收</text>
   <text x="666" y="502" class="small">PDA、HAC、弱网、连续扫码</text>

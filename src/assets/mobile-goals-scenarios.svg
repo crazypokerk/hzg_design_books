@@ -67,7 +67,7 @@
   <rect x="778" y="430" width="112" height="50" rx="8" class="panel"/>
   <text x="834" y="460" text-anchor="middle" class="step">下一条</text>
 
-  <path d="M474 430 V386 H794 V430" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M530 430 L632 386" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
   <rect x="632" y="364" width="250" height="44" rx="8" class="red"/>
   <text x="656" y="391" class="body">异常：保留码值，给重扫或上报</text>
 

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">PDA 弱网补传设计示例</title>
+  <desc id="desc">展示 PDA 页面在离线录入、待补传、恢复上传和补传失败重试时的界面状态。</desc>
+  <style>
+    text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .bg { fill: #ffffff; }
+    .device { fill: #111827; stroke: #020617; stroke-width: 1.5; }
+    .rail { fill: #0f172a; opacity: .9; }
+    .bezel { fill: #1f2937; }
+    .screen { fill: #f8fafc; stroke: #334155; stroke-width: 1.2; }
+    .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.4; }
+    .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
+    .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
+    .orange { fill: #fff7ed; stroke: #fed7aa; stroke-width: 1.2; }
+    .red { fill: #fef2f2; stroke: #fecaca; stroke-width: 1.2; }
+    .title { fill: #111827; font-size: 24px; font-weight: 700; }
+    .subtitle { fill: #6b7280; font-size: 13px; }
+    .label { fill: #111827; font-size: 14px; font-weight: 700; }
+    .body { fill: #111827; font-size: 13px; }
+    .small { fill: #6b7280; font-size: 12px; }
+    .buttonText { fill: #ffffff; font-size: 15px; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="960" height="600"/>
+  <text x="48" y="56" class="title">弱网补传：断网时不丢数据</text>
+  <text x="48" y="82" class="subtitle">页面要让用户知道当前是否离线、已暂存多少条、恢复后如何补传以及失败后怎么重试。</text>
+
+  <g id="device">
+    <rect x="72" y="118" width="272" height="440" rx="34" class="device"/>
+    <rect x="82" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="322" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="64" y="264" width="10" height="88" rx="5" fill="#f59e0b"/>
+    <rect x="342" y="246" width="8" height="66" rx="4" fill="#2563eb"/>
+    <rect x="118" y="138" width="180" height="30" rx="15" class="bezel"/>
+    <rect x="181" y="150" width="54" height="6" rx="3" fill="#475569"/>
+
+    <rect x="100" y="184" width="216" height="328" rx="14" class="screen"/>
+    <rect x="100" y="184" width="216" height="42" rx="14" fill="#eef2f7"/>
+    <text x="118" y="209" class="label">离线收货</text>
+    <text x="296" y="209" text-anchor="end" class="small">离线</text>
+
+    <rect x="118" y="240" width="180" height="52" rx="8" class="orange"/>
+    <text x="132" y="263" class="label">当前记录已暂存</text>
+    <text x="132" y="282" class="small">本地 ID：L-20260701-03</text>
+
+    <rect x="118" y="306" width="180" height="62" rx="8" class="blue"/>
+    <text x="132" y="331" class="label">待补传 3 条</text>
+    <text x="132" y="352" class="small">网络恢复后可自动上传</text>
+
+    <rect x="118" y="382" width="180" height="50" rx="8" class="red"/>
+    <text x="132" y="405" class="label">1 条补传失败</text>
+    <text x="132" y="424" class="small">原因：服务端校验超时</text>
+
+    <rect x="118" y="452" width="180" height="48" rx="8" fill="#2563eb"/>
+    <text x="208" y="476" text-anchor="middle" dominant-baseline="middle" class="buttonText">重试补传</text>
+    <circle cx="136" cy="536" r="7" fill="#334155"/>
+    <rect x="176" y="529" width="64" height="14" rx="7" fill="#334155"/>
+    <circle cx="280" cy="536" r="7" fill="#334155"/>
+  </g>
+
+  <rect x="430" y="126" width="204" height="74" rx="10" class="orange"/>
+  <text x="454" y="155" class="label">离线状态显式展示</text>
+  <text x="454" y="178" class="small">用户不需要猜测网络状态</text>
+  <path d="M430 164 L300 263" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="674" y="126" width="206" height="74" rx="10" class="blue"/>
+  <text x="698" y="155" class="label">本地记录可追踪</text>
+  <text x="698" y="178" class="small">每条记录保留唯一 ID 和原始码值</text>
+
+  <rect x="430" y="270" width="204" height="74" rx="10" class="green"/>
+  <text x="454" y="299" class="label">恢复后补传</text>
+  <text x="454" y="322" class="small">展示队列数量和上传结果</text>
+  <path d="M430 308 L300 337" stroke="#16a34a" stroke-width="1.6" fill="none" marker-end="url(#arrow-green)"/>
+
+  <rect x="674" y="270" width="206" height="74" rx="10" class="red"/>
+  <text x="698" y="299" class="label">失败可重试</text>
+  <text x="698" y="322" class="small">显示失败原因，避免重复录入</text>
+
+  <rect x="430" y="414" width="450" height="82" rx="12" fill="#f8fafc" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="454" y="444" class="label">验收要点</text>
+  <text x="454" y="472" class="body">断网录入 10 条后不丢数据；恢复网络后能补传；失败记录保留原因并可重试。</text>
+</svg>

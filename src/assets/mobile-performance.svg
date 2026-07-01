@@ -68,7 +68,7 @@
   <rect x="408" y="124" width="154" height="70" rx="8" class="blue"/>
   <text x="432" y="153" class="label">轻首屏</text>
   <text x="432" y="176" class="small">不等大列表和附件</text>
-  <path d="M358 268 H406 V159" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M358 268 L406 159" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
 
   <rect x="636" y="124" width="188" height="70" rx="8" class="orange"/>
   <text x="660" y="153" class="label">本地队列</text>

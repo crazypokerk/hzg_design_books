@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">PDA 任务选择页设计示例</title>
+  <desc id="desc">展示 PDA 任务选择页如何突出任务状态、筛选入口和快速进入主流程。</desc>
+  <style>
+    text { font-family: Inter, "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+    .bg { fill: #ffffff; }
+    .device { fill: #111827; stroke: #020617; stroke-width: 1.5; }
+    .rail { fill: #0f172a; opacity: .9; }
+    .bezel { fill: #1f2937; }
+    .screen { fill: #f8fafc; stroke: #334155; stroke-width: 1.2; }
+    .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.4; }
+    .blue { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
+    .green { fill: #ecfdf5; stroke: #86efac; stroke-width: 1.2; }
+    .orange { fill: #fff7ed; stroke: #fed7aa; stroke-width: 1.2; }
+    .red { fill: #fef2f2; stroke: #fecaca; stroke-width: 1.2; }
+    .title { fill: #111827; font-size: 24px; font-weight: 700; }
+    .subtitle { fill: #6b7280; font-size: 13px; }
+    .label { fill: #111827; font-size: 14px; font-weight: 700; }
+    .body { fill: #111827; font-size: 13px; }
+    .small { fill: #6b7280; font-size: 12px; }
+    .tiny { fill: #6b7280; font-size: 11px; }
+    .buttonText { fill: #ffffff; font-size: 15px; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="960" height="600"/>
+  <text x="48" y="56" class="title">任务选择页：先让用户进入正确任务</text>
+  <text x="48" y="82" class="subtitle">只保留必要筛选，突出任务状态和下一步入口，避免把查询页做成主流程。</text>
+
+  <g id="device">
+    <rect x="72" y="118" width="272" height="440" rx="34" class="device"/>
+    <rect x="82" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="322" y="150" width="12" height="334" rx="6" class="rail"/>
+    <rect x="64" y="264" width="10" height="88" rx="5" fill="#f59e0b"/>
+    <rect x="342" y="246" width="8" height="66" rx="4" fill="#2563eb"/>
+    <rect x="118" y="138" width="180" height="30" rx="15" class="bezel"/>
+    <rect x="181" y="150" width="54" height="6" rx="3" fill="#475569"/>
+
+    <rect x="100" y="184" width="216" height="328" rx="14" class="screen"/>
+    <rect x="100" y="184" width="216" height="42" rx="14" fill="#eef2f7"/>
+    <text x="118" y="209" class="label">盘点任务</text>
+    <text x="296" y="209" text-anchor="end" class="small">在线</text>
+
+    <rect x="118" y="244" width="180" height="36" rx="8" class="blue"/>
+    <text x="132" y="267" class="body">库位 A 区 · 待处理</text>
+
+    <rect x="118" y="294" width="180" height="68" rx="10" class="green"/>
+    <text x="132" y="319" class="label">PD-0901 今日盘点</text>
+    <text x="132" y="340" class="small">A-03 库位 · 18/64</text>
+    <rect x="246" y="316" width="38" height="22" rx="11" fill="#16a34a"/>
+    <text x="265" y="331" text-anchor="middle" class="tiny" fill="#ffffff">继续</text>
+
+    <rect x="118" y="376" width="180" height="62" rx="10" class="panel"/>
+    <text x="132" y="400" class="label">PD-0902 原料复核</text>
+    <text x="132" y="421" class="small">B-01 库位 · 0/32</text>
+
+    <rect x="118" y="452" width="180" height="38" rx="8" fill="#2563eb"/>
+    <text x="208" y="471" text-anchor="middle" dominant-baseline="middle" class="buttonText">进入任务</text>
+
+    <circle cx="136" cy="536" r="7" fill="#334155"/>
+    <rect x="176" y="529" width="64" height="14" rx="7" fill="#334155"/>
+    <circle cx="280" cy="536" r="7" fill="#334155"/>
+  </g>
+
+  <rect x="430" y="130" width="190" height="72" rx="10" class="blue"/>
+  <text x="454" y="159" class="label">任务状态先行</text>
+  <text x="454" y="182" class="small">待处理、进行中、异常要能扫读</text>
+  <path d="M430 166 L300 328" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="660" y="130" width="210" height="72" rx="10" class="green"/>
+  <text x="684" y="159" class="label">快速进入主流程</text>
+  <text x="684" y="182" class="small">高频入口放在首屏可触达区域</text>
+  <path d="M660 166 L300 237" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="430" y="254" width="190" height="72" rx="10" class="orange"/>
+  <text x="454" y="283" class="label">筛选保持克制</text>
+  <text x="454" y="306" class="small">只放现场需要的条件</text>
+  <path d="M430 290 L300 262" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="660" y="254" width="210" height="72" rx="10" class="panel"/>
+  <text x="684" y="283" class="label">低频查询后置</text>
+  <text x="684" y="306" class="small">历史、报表进入独立查询页</text>
+
+  <rect x="430" y="392" width="440" height="98" rx="12" fill="#f8fafc" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="454" y="426" class="label">验收要点</text>
+  <text x="454" y="454" class="body">首屏能识别当前任务状态；进入主流程不超过 1 次点击；筛选不会遮挡任务列表。</text>
+</svg>
