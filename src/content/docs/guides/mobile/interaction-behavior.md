@@ -31,7 +31,7 @@ PDA 页面交互应支持连续、稳定、低打断的现场作业。扫码反�
 
 异常状态应保留用户刚扫描的码值，明确说明失败原因，并提供可立即执行的恢复动作。
 
-![PDA 异常恢复设计示例](../../../../assets/mobile-example-error-recovery.svg)
+![PDA 异常恢复设计示例](../../../../assets/mobile-example-error-recovery.webp)
 
 ## 焦点规则
 

@@ -85,12 +85,12 @@
   <text x="454" y="287" class="small">最近记录 + 下一条</text>
   <path d="M646 270 H586" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
 
-  <path d="M584 286 L646 366" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M723 302 V324" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arrow-blue)"/>
   <rect x="646" y="330" width="206" height="72" rx="8" class="panel"/>
   <text x="670" y="358" class="label">提交中锁定</text>
   <text x="670" y="382" class="small">按钮禁用，服务端仍要防重复</text>
 
-  <path d="M646 180 L640 444" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M800 158 H872 V457 H644" stroke="#dc2626" stroke-width="1.6" fill="none" marker-end="url(#arrow-red)"/>
   <rect x="430" y="414" width="208" height="86" rx="8" class="red"/>
   <text x="454" y="444" class="label">失败时不清空</text>
   <text x="454" y="468" class="small">保留码值 M-10086</text>

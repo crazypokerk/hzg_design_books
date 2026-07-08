@@ -36,7 +36,7 @@ PDA 页面应围绕当前任务组织信息。首屏只承担当前判断和下�
 
 连续作业页应将扫码入口、当前记录、数量输入和确认动作组织在同一视图内，减少跳转和弹层。
 
-![PDA 连续收货页设计示例](../../../../assets/mobile-example-receiving-flow.svg)
+![PDA 连续收货页设计示例](../../../../assets/mobile-example-receiving-flow.webp)
 
 ## 页面骨架
 

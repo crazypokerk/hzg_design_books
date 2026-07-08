@@ -13,7 +13,7 @@ PDA 页面视觉设计的目标是提高现场判断效率，而不是追求装�
 
 小屏页面应让当前任务、物料、关键数量和主按钮先被看到，备注、历史和日志应弱化或后置。
 
-![PDA 小屏视觉层级设计示例](../../../../assets/mobile-example-visual-hierarchy.svg)
+![PDA 小屏视觉层级设计示例](../../../../assets/mobile-example-visual-hierarchy.webp)
 
 ## 字号与层级
 

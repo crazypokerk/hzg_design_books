@@ -36,7 +36,7 @@ PDA 页面设计应先定义任务，再设计界面。任务定义不清时，�
 
 任务选择页应突出任务状态和进入主流程的动作，筛选只保留现场必要条件。
 
-![PDA 任务选择页设计示例](../../../../assets/mobile-example-task-selection.svg)
+![PDA 任务选择页设计示例](../../../../assets/mobile-example-task-selection.webp)
 
 ## 现场条件
 

@@ -15,7 +15,7 @@ PDA 页面上线前必须在真实设备、真实网络和真实数据量下验�
 
 弱网页面应明确展示离线状态、待补传数量、失败原因和重试动作，确保断网期间继续作业且不丢数据。
 
-![PDA 弱网补传设计示例](../../../../assets/mobile-example-offline-sync.svg)
+![PDA 弱网补传设计示例](../../../../assets/mobile-example-offline-sync.webp)
 
 ## 首屏加载
 
