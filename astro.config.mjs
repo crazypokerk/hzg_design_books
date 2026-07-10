@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import starlightThemeTerminal from 'starlight-theme-terminal';
+import pagePlugin from '@pelagornis/page';
 import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
@@ -11,7 +11,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '活字格设计手册',
-			plugins: [starlightThemeTerminal()],
+			plugins: [
+				pagePlugin({
+					footerText: `© ${new Date().getFullYear()} 活字格设计手册`,
+				}),
+			],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
@@ -25,7 +29,7 @@ export default defineConfig({
 								{ label: '2. 信息架构', slug: 'guides/mobile/information-architecture' },
 								{ label: '3. 交互行为', slug: 'guides/mobile/interaction-behavior' },
 								{ label: '4. 视觉可读性', slug: 'guides/mobile/visual-perception' },
-								{ label: '5. 性能与验收', slug: 'guides/mobile/performance' },
+								{ label: '5. 性能与稳定性', slug: 'guides/mobile/performance' },
 							],
 						},
 						{
