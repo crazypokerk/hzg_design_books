@@ -1,5 +1,5 @@
 ---
-title: 日志
+title: HAC 日志
 description: HAC 运行日志的级别、位置、启用方式和问题反馈清单。
 sidebar:
   order: 4
@@ -11,7 +11,7 @@ HAC 日志用于排查容器运行、设备能力调用、扫码、定位、拍�
 
 日志默认保存在设备 `Download` / `Downloads` 文件夹中。
 
-![hac日志](../../../../assets/logs_hac_2.png)
+![hac日志](../../../assets/logs_hac_2.png)
 
 文件名通常类似：
 
@@ -34,7 +34,7 @@ HAC_Log_ERROR_20240112.txt
 
 在 HAC 设置页勾选“启用全部诊断日志”。
 
-![启用verbose日志](../../../../assets/logs_hac_1.png)
+![启用verbose日志](../../../assets/logs_hac_1.png)
 
 :::caution[需要重启]
 日志策略通常需要杀掉 HAC 进程后重新启动才会生效。问题排查结束后，应关闭诊断日志并再次重启 HAC。
@@ -71,4 +71,4 @@ HAC_Log_ERROR_20240112.txt
 | 拍照、定位、文件失败 | 检查 Android 权限、命令返回值和 HAC 异常堆栈 |
 | 只在某台 PDA 出现 | 对比设备型号、系统、WebView、HAC 版本和厂商配置 |
 
-页面运行时调试请参考[调试](./how-to-debug-hac/)。
+页面运行时调试请参考[调试](./debugging/)。

@@ -1,35 +1,46 @@
 ---
-title: 移动端手册
-description: 面向手机与 PDA 场景的页面目标、信息架构、交互、视觉与性能实践。
+title: HAC 文档
+description: 活字格 Android 容器（HAC）的入门、安装、设备能力、典型方案和 PDA 页面设计原则。
 template: splash
 hero:
-  tagline: 从目标与场景、信息架构、交互与行为、视觉与感知、性能五个维度构建移动端手册。
-  image:
-    file: ../../assets/houston.webp
+  tagline: 从了解 HAC 到上线现场应用，按入门、安装、功能、方案和原则五个部分查找文档。
   actions:
-    - text: 查看手册总览
-      link: /guides/mobile/
+    - text: 了解 HAC
+      link: /introduction/
+      icon: right-arrow
+    - text: 开始安装
+      link: /installation/
       icon: right-arrow
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## 章节概览
+## 文档导航
 
 <CardGrid stagger>
-	<Card title="目标与场景" icon="pencil">
-		先定义页面服务的任务目标、使用场景、设备边界和成功标准。
+	<Card title="HAC 入门" icon="open-book">
+		了解 HAC 是什么、适合什么设备，以及它和普通浏览器的边界。
 	</Card>
-	<Card title="信息架构" icon="document">
-		组织首屏重点、页面层级、模块结构与导航路径。
+	<Card title="安装与调试" icon="setting">
+		下载 HAC 和插件，完成配置、设备检查、调试和日志采集。
 	</Card>
-	<Card title="交互与行为" icon="add-document">
-		规范按钮、表单、反馈、状态与错误恢复。
+	<Card title="功能用法" icon="add-document">
+		按设备能力和业务功能查找扫码、离线、定位、BLE、NFC 等说明。
 	</Card>
-	<Card title="视觉与感知" icon="setting">
-		通过层级、对比、留白和状态表达提升识别与判断效率。
+	<Card title="典型解决方案" icon="pencil">
+		通过采购入库等完整案例理解页面流程、设备能力和异常恢复。
 	</Card>
-	<Card title="性能" icon="open-book">
-		覆盖加载、响应、弱网、兼容性与稳定性。
+	<Card title="原则与最佳实践" icon="document">
+		学习 PDA 页面在现场环境中的任务、交互、可读性和稳定性原则。
 	</Card>
 </CardGrid>
+
+## 快速入口
+
+| 你的目标 | 从这里开始 |
+| --- | --- |
+| 第一次了解 HAC | [HAC 入门](/introduction/) |
+| 下载并配置应用 | [安装与调试](/installation/) |
+| 查找插件命令或设备能力 | [功能用法](/features/) |
+| 设计采购入库等现场流程 | [典型解决方案](/solutions/) |
+| 设计 PDA 页面 | [原则与最佳实践](/principles/) |

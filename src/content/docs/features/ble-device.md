@@ -34,10 +34,10 @@ BLE 设备读写用于在 `HAC` 中调用 Android 蓝牙能力，扫描附近低
 | 向BLE设备写入数据 | 写入 Base64 数据 |
 | 向BLE设备写入数据并填充到单元格 | 写入后回填结果 |
 
-![扫描BLE设备/标签](../../../../assets/ble-device-1.png)
-![从BLE设备读取数据](../../../../assets/ble-device-2.png)
-![向BLE设备订阅数据通知](../../../../assets/ble-device-3.png)
-![向BLE设备写入数据](../../../../assets/ble-device-5.png)
+![扫描BLE设备/标签](../../../assets/ble-device-1.png)
+![从BLE设备读取数据](../../../assets/ble-device-2.png)
+![向BLE设备订阅数据通知](../../../assets/ble-device-3.png)
+![向BLE设备写入数据](../../../assets/ble-device-5.png)
 
 ## 推荐流程
 

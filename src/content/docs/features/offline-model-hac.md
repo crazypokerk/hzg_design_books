@@ -60,8 +60,8 @@ DATA_NOT_FOUND
 -> 全部完成后关闭离线模式
 ```
 
-![设置离线模式](../../../../assets/offline-model-1.png)
-![将键值存入离线存储](../../../../assets/offline-model-3.png)
+![设置离线模式](../../../assets/offline-model-1.png)
+![将键值存入离线存储](../../../assets/offline-model-3.png)
 
 ## 设计要点
 

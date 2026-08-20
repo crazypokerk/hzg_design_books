@@ -1,6 +1,6 @@
 ---
 title: 拍摄
-description: HAC 中拍照、录像、录音、水印和读取本地文件的页面流程。
+description: HAC 中拍照、录像、录音、水印和本地文件能力的页面流程。
 sidebar:
   order: 6
 ---
@@ -31,9 +31,9 @@ sidebar:
 | 【录制音频】 | `mp3` 文件 `Uri` | 录制现场音频 |
 | 【读取本地文件】 | `Object Url` | 读取文件内容用于展示或上传 |
 
-![拍照拍视频](../../../../assets/camera-showdemo.gif)
-![录音](../../../../assets/camera-showdemo-1.gif)
-![读取本地文件](../../../../assets/camera-capture-5.png)
+![拍照拍视频](../../../assets/camera-showdemo.gif)
+![录音](../../../assets/camera-showdemo-1.gif)
+![读取本地文件](../../../assets/camera-capture-5.png)
 
 ## 推荐流程
 

@@ -63,7 +63,7 @@ NFC 读取结果通常包含以下内容：
 
 在按钮的命令中选择【读取NFC标签到单元格】，然后为 TAG ID 指定一个目标单元格。
 
-![读取 NFC 标签到单元格命令的配置](../../../../assets/nfc-tag-reading-sync.png)
+![读取 NFC 标签到单元格命令的配置](../../../assets/nfc-tag-reading-sync.png)
 
 重点检查“目标单元格”是否正确。读取成功后，TAG ID 会自动写入该单元格，不需要用户手工输入。
 
@@ -73,7 +73,7 @@ NFC 读取结果通常包含以下内容：
 
 在命令窗口中选择【读取NFC标签】，然后在该命令下添加成功和失败处理。
 
-![读取 NFC 标签异步命令的配置](../../../../assets/nfc-tag-reading-async.png)
+![读取 NFC 标签异步命令的配置](../../../assets/nfc-tag-reading-async.png)
 
 Demo 使用 `IsSuccess 等于 true` 判断读取结果：
 
@@ -90,7 +90,7 @@ Demo 使用 `IsSuccess 等于 true` 判断读取结果：
 
 在成功分支中，使用【设置单元格属性】将 `NFC_Tag` 写入显示 TAG ID 的单元格。
 
-![NFC 标签读取结果写入设置](../../../../assets/nfc-tag-reading-2.png)
+![NFC 标签读取结果写入设置](../../../assets/nfc-tag-reading-2.png)
 
 图中需要重点检查以下内容：
 
@@ -105,7 +105,7 @@ Demo 使用 `IsSuccess 等于 true` 判断读取结果：
 
 发布应用后，在已经开启 NFC 的 HAC 中打开 Demo。点击“读取”，再将设备的 NFC 感应区域贴近标签。
 
-![HAC 中读取 NFC 标签的运行效果](../../../../assets/nfc-tag-reading-1.gif)
+![HAC 中读取 NFC 标签的运行效果](../../../assets/nfc-tag-reading-1.gif)
 
 读取成功后，页面会显示 TAG ID。读取过程中请保持设备稳定，在出现成功提示前不要移开，也不要连续点击“读取”。
 

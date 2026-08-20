@@ -9,13 +9,13 @@ PDA 页面需要面向真实设备、真实网络和真实数据量设计。仅�
 
 现场常见风险包括：首屏加载慢、扫码后卡顿、断网丢记录、提交超时后重复生成数据、HAC 或旧 WebView 行为异常。
 
-![PDA 弱网和性能稳定性示例](../../../../assets/mobile-performance.svg)
+![PDA 弱网和性能稳定性示例](../../../assets/mobile-performance.svg)
 
 ## 设计示例
 
 弱网页面应明确展示离线状态、待补传数量、失败原因和重试动作，确保断网期间继续作业且不丢数据。
 
-![PDA 弱网补传设计示例](../../../../assets/mobile-example-offline-sync.webp)
+![PDA 弱网补传设计示例](../../../assets/mobile-example-offline-sync.webp)
 
 ## 首屏加载
 
@@ -88,7 +88,7 @@ PDA 不适合一次渲染大量数据。
 任务号、条码原始值、数量、操作人、操作时间、补传状态、异常原因
 ```
 
-使用 HAC 离线能力时，可参考[「功能」离线模式](../scenarios/offline-model-hac/)。
+使用 HAC 离线能力时，可参考[「功能」离线模式](../features/offline-model-hac/)。
 
 ## 提交超时
 
@@ -131,5 +131,5 @@ PDA 不适合一次渲染大量数据。
 - 避免依赖过新的浏览器能力。
 - HAC 中异常时使用远程调试和日志排查。
 
-调试方式可参考[调试](../scenarios/how-to-debug-hac/)和[日志](../scenarios/logs-hac/)。
+调试方式可参考[调试](../installation/debugging/)和[日志](../installation/logging/)。
 

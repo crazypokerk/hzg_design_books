@@ -79,9 +79,9 @@ UHF：
 -> 离开页面时执行【停止接收UHF扫描结果】
 ```
 
-![开始持续扫码](../../../../assets/scanner-1.png)
-![单次扫码](../../../../assets/scanner-3.png)
-![开始接收 UHF 扫描结果](../../../../assets/scanner-4.png)
+![开始持续扫码](../../../assets/scanner-1.png)
+![单次扫码](../../../assets/scanner-3.png)
+![开始接收 UHF 扫描结果](../../../assets/scanner-4.png)
 
 ## 设计要点
 

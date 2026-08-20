@@ -1,6 +1,6 @@
 ---
 title: APP 交互
-description: HAC 中 APP 原生页、设备信息、PDF、电话、震动、提示音和广播命令的使用建议。
+description: HAC 中应用原生页、设备信息、PDF、电话、震动、提示音和广播命令的使用建议。
 sidebar:
   order: 10
 ---
@@ -53,10 +53,10 @@ APP 交互命令用于让活字格页面在 `HAC` 中调用部分 Android 原生
 -> 离开页面时执行【停止监听广播】
 ```
 
-![打开APP的内置页面](../../../../assets/app-interaction-1.png)
-![读取APP信息](../../../../assets/app-interaction-2.png)
-![预览PDF文件](../../../../assets/app-interaction-5.png)
-![开始接收广播](../../../../assets/app-interaction-11.png)
+![打开APP的内置页面](../../../assets/app-interaction-1.png)
+![读取APP信息](../../../assets/app-interaction-2.png)
+![预览PDF文件](../../../assets/app-interaction-5.png)
+![开始接收广播](../../../assets/app-interaction-11.png)
 
 ## 关键能力说明
 

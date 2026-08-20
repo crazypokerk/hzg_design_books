@@ -1,3 +1,69 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+[[redirects]]
+  from = "/guides/mobile"
+  to = "/principles/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/mobile/*"
+  to = "/principles/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/scenarios"
+  to = "/features/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/scenarios/index"
+  to = "/features/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/scenarios/plugin-function-list"
+  to = "/features/command-index/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/scenarios/hac-android-container-pda"
+  to = "/introduction/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/scenarios/how-to-debug-hac"
+  to = "/installation/debugging/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/scenarios/logs-hac"
+  to = "/installation/logging/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/scenarios/*"
+  to = "/features/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/practice"
+  to = "/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/practice/*"
+  to = "/solutions/:splat"
+  status = 301
+  force = true

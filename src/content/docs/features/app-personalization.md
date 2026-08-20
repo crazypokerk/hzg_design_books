@@ -58,9 +58,9 @@ ActionBar / 菜单配置：
 -> 验证持续扫码或单次扫码结果
 ```
 
-![配置APP的ActionBar](../../../../assets/app-personalization-1.png)
-![配置扫描头参数](../../../../assets/app-personalization-3.png)
-![读取ActionBar颜色](../../../../assets/app-personalization-5.png)
+![配置APP的ActionBar](../../../assets/app-personalization-1.png)
+![配置扫描头参数](../../../assets/app-personalization-3.png)
+![读取ActionBar颜色](../../../assets/app-personalization-5.png)
 
 ## 设计要点
 

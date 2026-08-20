@@ -38,8 +38,8 @@ sidebar:
 | 弱生物识别 | 普通二次确认，安全要求较低 |
 | 设备密码识别 | 无可用生物识别时的替代方式 |
 
-![生物认证检测](../../../../assets/biometric-authentication-1.png)
-![生物认证识别](../../../../assets/biometric-authentication-2.png)
+![生物认证检测](../../../assets/biometric-authentication-1.png)
+![生物认证识别](../../../assets/biometric-authentication-2.png)
 
 ## 推荐流程
 

@@ -1,5 +1,5 @@
 ---
-title: 调试
+title: 调试 HAC 页面
 description: 使用 Chrome DevTools 调试 HAC 中加载的活字格 Web 应用。
 sidebar:
   order: 3
@@ -23,7 +23,7 @@ HAC 本质上是包含 `WebView` 的 Android 原生应用。页面白屏、按�
 4. 用 USB 线连接电脑。
 5. 设备弹出授权提示时选择允许。
 
-| ![打开开发者选项](../../../../assets/pda_developer_model_demo.png) | ![开启 USB 调试](../../../../assets/pda_developer_model_demo_1.png) |
+| ![打开开发者选项](../../../assets/pda_developer_model_demo.png) | ![开启 USB 调试](../../../assets/pda_developer_model_demo_1.png) |
 | :---: | :---: |
 
 ## 连接 DevTools
@@ -67,4 +67,4 @@ HAC 本质上是包含 `WebView` 的 Android 原生应用。页面白屏、按�
 - DevTools Console / Network 关键错误。
 - 同一页面在 PC 浏览器和 HAC 中的表现差异。
 
-需要容器侧日志时，继续参考[日志](./logs-hac/)。
+需要容器侧日志时，继续参考[日志](./logging/)。
