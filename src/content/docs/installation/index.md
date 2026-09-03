@@ -9,19 +9,19 @@ sidebar:
 
 ## 使用前提
 
-- Android 版本不低于 `8.0`。
-- 运行内存建议不低于 `2GB`。
-- 活字格应用已发布到设备可访问的服务器。
-- 设计器中已安装需要的 PDA / Android 交互命令插件。
+- Android 版本不低于 `8.0`；
+- 运行内存建议不低于 `2GB`；
+- 活字格应用已发布到设备可访问的服务器；
+- 设计器中已安装需要的 PDA / Android 交互命令插件；
 - 目标 PDA 的 WebView、系统权限、网络和硬件能力已验证。
 
 这些是当前文档的验证基线，不替代具体设备和版本的厂商要求。
 
 ## 下载地址
 
-- HAC 应用：[下载地址](https://github.com/kadbbz/HAC_lowcode_app_for_android_based_on_webview/releases)
-- HAC 插件：[插件市场](https://marketplace.grapecity.com.cn/ApplicationDetails?productID=SP2209070004)
-- 配置码生成器：<a href="https://hac.app.hzgcloud.cn/config" target="_blank" rel="noopener noreferrer">一键生成和导出配置码</a>
+- HAC 应用：[下载地址](https://github.com/kadbbz/HAC_lowcode_app_for_android_based_on_webview/releases)；
+- HAC 插件：[插件市场](https://marketplace.grapecity.com.cn/ApplicationDetails?productID=SP2209070004)；
+- 配置码生成器：<a href="https://hac.app.hzgcloud.cn/config" target="_blank" rel="noopener noreferrer">一键生成和导出配置码</a>。
 
 ## 首次部署
 
@@ -89,10 +89,10 @@ sidebar:
 
 ## 首次运行验收
 
-- HAC 能打开配置的活字格应用并完成登录。
-- 页面加载后能显示当前任务、网络状态和关键操作入口。
-- 目标扫描方式能返回码值，页面能显示成功、重复和失败反馈。
-- 需要权限的功能能在拒绝权限后给出恢复路径，而不是让页面无响应。
+- HAC 能打开配置的活字格应用并完成登录；
+- 页面加载后能显示当前任务、网络状态和关键操作入口；
+- 目标扫描方式能返回码值，页面能显示成功、重复和失败反馈；
+- 需要权限的功能能在拒绝权限后给出恢复路径，而不是让页面无响应；
 - 断网或提交超时时，页面保留必要数据并允许重试或补传。
 
 遇到页面运行时问题，请查看[调试](./debugging/)；需要收集容器信息时，请查看[日志](./logging/)。功能命令和页面流程见[功能用法](/features/)。

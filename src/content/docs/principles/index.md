@@ -20,17 +20,17 @@ sidebar:
 
 ## 设计流程
 
-1. [任务与场景定义](./goals-scenarios/)
-2. [信息架构](./information-architecture/)
-3. [交互行为](./interaction-behavior/)
-4. [视觉可读性](./visual-perception/)
-5. [性能与稳定性](./performance/)
+1. [任务与场景定义](./goals-scenarios/)；
+2. [信息架构](./information-architecture/)；
+3. [交互行为](./interaction-behavior/)；
+4. [视觉可读性](./visual-perception/)；
+5. [性能与稳定性](./performance/)。
 
 每篇原则都应落到可观察的验收条件，例如扫码反馈时间、最大点击次数、失败恢复路径、弱网补传结果和目标设备表现。
 
 ## 如何配合其他章节
 
-- 需要知道 HAC 能否调用某项设备能力时，先看[功能用法](/features/)。
-- 需要确认权限、WebView、广播和网络环境时，先看[安装与调试](/installation/)。
+- 需要知道 HAC 能否调用某项设备能力时，先看[功能用法](/features/)；
+- 需要确认权限、WebView、广播和网络环境时，先看[安装与调试](/installation/)；
 - 需要查看完整业务页面如何落地原则时，参考[典型解决方案](/solutions/)。
 

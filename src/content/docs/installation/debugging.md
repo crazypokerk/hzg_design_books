@@ -9,18 +9,18 @@ HAC 本质上是包含 `WebView` 的 Android 原生应用。页面白屏、按�
 
 ## 准备工作
 
-- 电脑已安装 Chrome。
-- Android 手机或 PDA 已安装 HAC。
-- 使用可传输数据的 USB 线连接设备。
-- HAC 中已打开需要调试的活字格页面。
+- 电脑已安装 Chrome；
+- Android 手机或 PDA 已安装 HAC；
+- 使用可传输数据的 USB 线连接设备；
+- HAC 中已打开需要调试的活字格页面；
 - PDA 厂商 USB 驱动已安装，设备 USB 模式不是“仅充电”。
 
 ## 开启 USB 调试
 
-1. 在设备“关于手机 / 关于设备”中连续点击版本号，开启开发者选项。
-2. 打开“USB 调试”。
-3. 如有“启用视图属性检查功能”，一并开启。
-4. 用 USB 线连接电脑。
+1. 在设备“关于手机 / 关于设备”中连续点击版本号，开启开发者选项；
+2. 打开“USB 调试”；
+3. 如有“启用视图属性检查功能”，一并开启；
+4. 用 USB 线连接电脑；
 5. 设备弹出授权提示时选择允许。
 
 | ![打开开发者选项](../../../assets/pda_developer_model_demo.png) | ![开启 USB 调试](../../../assets/pda_developer_model_demo_1.png) |
@@ -28,15 +28,15 @@ HAC 本质上是包含 `WebView` 的 Android 原生应用。页面白屏、按�
 
 ## 连接 DevTools
 
-1. 电脑打开 Chrome。
-2. 地址栏输入：
+1. 电脑打开 Chrome；
+2. 在地址栏输入以下地址；
 
    ```text
    chrome://inspect/#devices
    ```
 
-3. 勾选 `Discover USB devices`。
-4. 打开 HAC 并进入目标页面。
+3. 勾选 `Discover USB devices`；
+4. 打开 HAC 并进入目标页面；
 5. 在 `Remote Target` 中找到对应 `WebView`，点击 `inspect`。
 
 ## 排查顺序
@@ -61,10 +61,10 @@ HAC 本质上是包含 `WebView` 的 Android 原生应用。页面白屏、按�
 
 ## 反馈问题时收集
 
-- 复现步骤和问题发生时间。
-- 设备型号、Android 版本、WebView 版本、HAC 版本。
-- 网络环境和服务器地址类型。
-- DevTools Console / Network 关键错误。
+- 复现步骤和问题发生时间；
+- 设备型号、Android 版本、WebView 版本、HAC 版本；
+- 网络环境和服务器地址类型；
+- DevTools Console / Network 关键错误；
 - 同一页面在 PC 浏览器和 HAC 中的表现差异。
 
 需要容器侧日志时，继续参考[日志](./logging/)。
