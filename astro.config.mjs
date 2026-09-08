@@ -27,6 +27,7 @@ export default defineConfig({
 					label: '安装与调试',
 					items: [
 						{ label: '安装与配置', slug: 'installation' },
+						{ label: '个性化配置', slug: 'installation/app-personalization' },
 						{ label: '调试HAC', slug: 'installation/debugging' },
 						{ label: 'HAC 日志', slug: 'installation/logging' },
 					],
@@ -44,7 +45,6 @@ export default defineConfig({
 						{ label: '「功能」 拍摄', slug: 'features/camera-capture' },
 						{ label: '「功能」 扫描', slug: 'features/scanner' },
 						{ label: '「功能」 APP 交互', slug: 'features/app-interaction' },
-						{ label: '「功能」 APP 个性化配置', slug: 'features/app-personalization' },
 						{ label: '「功能」 物理按键监听', slug: 'features/physical-key-listening' },
 					],
 				},

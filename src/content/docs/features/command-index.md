@@ -81,12 +81,12 @@ sidebar:
 | 插件命令 | 说明页 |
 | --- | --- |
 | 预览PDF文件 | [APP 交互](./app-interaction/) |
-| 配置APP的ActionBar | [APP 个性化配置](./app-personalization/) |
-| 配置APP的菜单 | [APP 个性化配置](./app-personalization/) |
-| 配置扫描头参数 | [APP 个性化配置](./app-personalization/) |
-| 配置APP的ActionBar颜色 | [APP 个性化配置](./app-personalization/) |
-| 读取ActionBar颜色 | [APP 个性化配置](./app-personalization/) |
-| 读取ActionBar颜色到单元格 | [APP 个性化配置](./app-personalization/) |
+| 配置APP的ActionBar | [个性化配置](/installation/app-personalization/) |
+| 配置APP的菜单 | [个性化配置](/installation/app-personalization/) |
+| 配置扫描头参数 | [个性化配置](/installation/app-personalization/) |
+| 配置APP的ActionBar颜色 | [个性化配置](/installation/app-personalization/) |
+| 读取ActionBar颜色 | [个性化配置](/installation/app-personalization/) |
+| 读取ActionBar颜色到单元格 | [个性化配置](/installation/app-personalization/) |
 | 震动提醒 | [APP 交互](./app-interaction/) |
 | 播放提示音 | [APP 交互](./app-interaction/) |
 | 打开APP的内置页面 | [APP 交互](./app-interaction/) |

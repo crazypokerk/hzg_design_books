@@ -17,7 +17,7 @@ sidebar:
 | 定位、NFC、BLE、身份认证 | [定位](./gps-location-demo/)、[读取 NFC 标签](./nfc-tag-reading/)、[BLE 设备读写](./ble-device/)、[生物识别认证](./biometric-authentication/) |
 | 拍照、录像、录音和本地文件 | [拍摄](./camera-capture/) |
 | 应用原生页、PDF、电话、震动和广播 | [APP 交互](./app-interaction/) |
-| ActionBar、菜单和扫描头参数 | [APP 个性化配置](./app-personalization/) |
+| ActionBar、菜单和扫描头参数 | [个性化配置](/installation/app-personalization/) |
 | 物理按键监听 | [物理按键监听](./physical-key-listening/) |
 
 ## 功能页的阅读顺序
