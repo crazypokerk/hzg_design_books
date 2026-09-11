@@ -117,15 +117,11 @@ sidebar:
 
 配置完成后 APP 可能重新加载。返回页面后应检查顶部区域、配置菜单、帮助和关于页面是否符合目标环境。
 
-![配置APP的ActionBar](../../../assets/app-personalization-1.png)
-
 ## 配置 APP 菜单
 
 【配置APP的菜单】用于设置菜单入口，字段与 ActionBar 配置中的菜单字段相同：配置菜单的显示状态、帮助页面和关于页面地址。
 
 适合只调整菜单而不改变顶部区域其他设置的场景。隐藏配置菜单前，必须确认管理员仍能通过快速设置二维码、设备管理工具或其他恢复流程重新配置。
-
-![配置APP的菜单](../../../assets/app-personalization-2.png)
 
 ## 配置扫描头参数
 
@@ -138,18 +134,12 @@ sidebar:
 
 配置前先在 PDA 厂商工具中确认广播 / `Intent` 模式、Action、Extra key、码值前后缀和分隔符。配置完成后必须在目标机型上用物理扫码键或厂商测试工具验证结果。
 
-![配置扫描头参数](../../../assets/app-personalization-3.png)
-
 
 ## 配置和读取 ActionBar 颜色
 
 【配置APP的ActionBar颜色】单独设置顶部区域颜色，颜色格式为不带 `#` 的六位 RGB 值，例如 `FFFFFF`。设置后 APP 可能重新加载。
 
 【读取ActionBar颜色】返回当前颜色，结果为 `FFFFFF` 格式 RGB；【读取ActionBar颜色到单元格】将结果写入指定单元格。读取命令适合配置页回显、部署记录和避免重复设置。
-
-![配置APP的ActionBar颜色](../../../assets/app-personalization-4.png)
-![读取ActionBar颜色](../../../assets/app-personalization-5.png)
-![读取ActionBar颜色到单元格](../../../assets/app-personalization-6.png)
 
 ## 设计要点
 
