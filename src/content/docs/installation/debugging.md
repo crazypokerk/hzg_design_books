@@ -1,5 +1,5 @@
 ---
-title: 调试HAC
+title: 调试 HAC
 description: 使用 Chrome DevTools 调试 HAC 中加载的活字格 Web 应用。
 sidebar:
   order: 3
