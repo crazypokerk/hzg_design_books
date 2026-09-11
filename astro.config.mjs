@@ -28,7 +28,7 @@ export default defineConfig({
 					items: [
 						{ label: '安装与配置', slug: 'installation' },
 						{ label: '个性化配置', slug: 'installation/app-personalization' },
-						{ label: '调试HAC', slug: 'installation/debugging' },
+						{ label: '调试 HAC', slug: 'installation/debugging' },
 						{ label: 'HAC 日志', slug: 'installation/logging' },
 					],
 				},
