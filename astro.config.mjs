@@ -52,7 +52,6 @@ export default defineConfig({
 					label: '典型解决方案',
 					items: [
 						{ label: '方案总览', slug: 'solutions' },
-						{ label: '采购入库：PDA 现场收货', slug: 'solutions/pda-inventory-counting' },
 					],
 				},
 				{
